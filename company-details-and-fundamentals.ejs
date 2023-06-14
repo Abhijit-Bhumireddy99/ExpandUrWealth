@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport - the area of a web page that's visible to the user -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 CSS and External CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/company-details-and-fundamentals.css">
+    <title>About</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./Domestic_Stocks_Discover.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discover
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/domestic_stocks">Domestic Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">US Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">Mutual Funds</a></li>
+                    <li><a class="dropdown-item" href="/ipo">IPO</a></li>
+                    <li><a class="dropdown-item" href="#">Gold</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/domestic_holdings">My Holdings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Watch-List</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn&Invest
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="#">Stock Market Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Market News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search about stocks here..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+   <br> 
+   <h3 id="heading-1">&nbsp;Know Your Company...Before Invest Your Penny</h3>
+   <p id="para-1"> 
+    <i> ~  When researching a publicly traded company, it's always a good idea to start with its official website. 
+    The website can provide you with basic information about the company, its products or services, its mission and 
+    values, and other relevant information. Then check the company's fundamentals, quarterly / annually results, 
+    profit / loss statement, balance sheet, cash flows, some important ratios, shareholding pattern, etc. provided in our 
+    website to better track company's financial health and it's growth potential. Also review a company's exchange filings, 
+    if possible. In addition to these metrics, also look for news articles, industry reports, and other sources of 
+    information to gain a more comprehensive understanding of the company's business activities and industry trends.  ~</i></p>
+   <br><br><br><br><br><br><br><br><br><br>
+
+
+   <h4 id="heading-2">&nbsp;Fundamentals</h4>
+   <!-- Fundamentals -->
+   <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- 1st column info -->  
+        <p id="market-cap"><b><i>Market Cap</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹ 11,61,676 Cr.</p>
+      </div>
+      <div class="col">
+        <!-- 2nd column info -->
+        <p id="pe"><b><i>P/E Ratio</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27.60</p>
+      </div>
+      <div class="col">
+        <!-- 3rd column info -->
+        <p id="industry-pe"><b><i>Industry P/E Ratio</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.40</p>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col">
+        <!-- 1st column info -->
+        <p id="div-yield"><b><i>Dividend Yield</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.35%</p>
+      </div>
+      <div class="col">
+        <!-- 2nd column info -->  
+        <p id="roce"><b><i>ROCE</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59.10%</p>
+      </div>
+      <div class="col">
+        <!-- 3rd column info -->
+        <p id="roe"><b><i>ROE</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 46.90%</p>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->
+      <p id="bv"><b><i>Book Value</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹ 247.00</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pb"><b><i>P/B Ratio</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.80</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fv"><b><i>Face Value</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹ 2.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->
+      <p id="de"><b><i>D/E Ratio</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.09</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="eps"><b><i>EPS (last 12 months)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹ 115.00</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pledge-percent"><b><i>Pledged Percentage</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.48%</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->
+      <p id="sg"><b><i>Sales Growth (last 12 months)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17.60%</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="sg3"><b><i>Sales Growth (3 years)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.80%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="sg5"><b><i>Sales Growth (5 years)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12.90%</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->
+      <p id="pg"><b><i>Profit Growth (last 12 months)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.96%</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pg3"><b><i>Profit Growth (3 years)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.26%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pg5"><b><i>Profit Growth (5 years)</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.40%</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->
+      <p id="roi"><b><i>ROI</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20.40%</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="holding1"><b><i>Change in Promoter(s) Holding</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.00%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="holding2"><b><i>Change in Institutional Investors Holding</i></b> :- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -3.02%</p>
+    </div>
+  </div>
+
+  <a href="#" id="understand"><h5>Understand Fundamentals</h5></a>
+     
+</div>
+
+
+<h4 id="heading-3">&nbsp;Quarterly Results</h4>
+<div class="container">
+  <h5 id="num-data">Numerical data expressed in Crores (₹) except EPS</h5>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fiscal-quarter"><b><i>Fiscal Quarter</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="q1-res"><b><i>Mar 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="q2-res"><b><i>June 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="q3-res"><b><i>Sep 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="q4-res"><b><i>Dec 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="q5-res"><b><i>Mar 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="q6-res"><b><i>June 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="q7-res"><b><i>Sep 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="q8-res"><b><i>Dec 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="q9-res"><b><i>Mar 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="q10-res"><b><i>June 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="q11-res"><b><i>Sep 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="q12-res"><b><i>Dec 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="q13-res"><b><i>Mar 2023</i></b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="rq"><b><i>Revenue</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="rq1">39946</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rq2">38322</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rq3">40135</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="rq4">42015</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="rq5">43705</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="rq6">45411</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="rq7">46867</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="rq8">48885</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="rq9">50591</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="rq10">52758</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="rq11">55309</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="rq12">58229</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="rq13">59162</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ex-q"><b><i>Expenses</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ex-q1">28970</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ex-q2">28298</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ex-q3">28622</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ex-q4">29807</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ex-q5">30904</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ex-q6">32748</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ex-q7">33751</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ex-q8">35452</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ex-q9">36746</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ex-q10">39342</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ex-q11">40793</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ex-q12">42676</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="ex-q13">43388</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="op-q"><b><i>Opera-ting Profit</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="op-q1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-q2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-q3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="op-q4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="op-q5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="op-q6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="op-q7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="op-q8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="op-q9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="op-q10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="op-q11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="op-q12">---</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="op-q13">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="op-q-percent"><b><i>OPM (%)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="op-q1-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-q2-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-q3-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="op-q4-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="op-q5-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="op-q6-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="op-q7-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="op-q8-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="op-q9-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="op-q10-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="op-q11-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="op-q12-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="op-q13-percent">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="oi-q"><b><i>Other Income</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="oi-q1">738</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oi-q2">598</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oi-q3">-304</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="oi-q4">691</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="oi-q5">931</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="oi-q6">721</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="oi-q7">1111</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="oi-q8">1205</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="oi-q9">981</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="oi-q10">789</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="oi-q11">965</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="oi-q12">520</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="oi-q13">1175</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="i-q"><b><i>Interest</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="i-q1">251</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-q2">142</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-q3">174</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="i-q4">183</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="i-q5">138</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="i-q6">146</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="i-q7">142</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="i-q8">251</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="i-q9">245</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="i-q10">199</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="i-q11">148</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="i-q12">160</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="i-q13">272</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="d-q"><b><i>Depreci-ation</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="d-q1">951</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="d-q2">976</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="d-q3">998</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="d-q4">1024</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="d-q5">1067</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="d-q6">1075</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="d-q7">1116</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="d-q8">1196</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="d-q9">1217</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="d-q10">1230</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="d-q11">1237</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="d-q12">1269</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="d-q13">1286</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="pbt-q"><b><i>PBT</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pbt-q1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pbt-q2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pbt-q3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="pbt-q4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="pbt-q5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="pbt-q6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="pbt-q7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="pbt-q8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="pbt-q9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="pbt-q10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="pbt-q11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="pbt-q12">---</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="pbt-q13">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="tax-percent-q"><b><i>Tax (%)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="tax-percent-q1">23%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tax-percent-q2">26%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tax-percent-q3">25%</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="tax-percent-q4">25%</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="tax-percent-q5">26%</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="tax-percent-q6">26%</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="tax-percent-q7">26%</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="tax-percent-q8">26%</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="tax-percent-q9">25%</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="tax-percent-q10">25%</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="tax-percent-q11">26%</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="tax-percent-q12">26%</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="tax-percent-q13">26%</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="pat-q"><b><i>Net Profit (PAT)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pat-q1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pat-q2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pat-q3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="pat-q4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="pat-q5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="pat-q6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="pat-q7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="pat-q8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="pat-q9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="pat-q10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="pat-q11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="pat-q12">---</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="pat-q13">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="eps-q"><b><i>EPS (₹)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="eps-q1">21.45</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="eps-q2">18.68</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="eps-q3">19.92</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="eps-q4">23.19</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="eps-q5">25.00</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="eps-q6">24.35</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="eps-q7">26.02</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="eps-q8">26.41</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="eps-q9">27.13</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="eps-q10">25.90</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="eps-q11">28.51</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="eps-q12">29.64</p>
+    </div>
+    <div class="col">
+      <!-- 13th column info -->
+      <p id="eps-q13">31.13</p>
+    </div>
+  </div>
+  <a href="#" id="understand-1"><h5>Understand Quarterly Results</h5></a>
+</div>
+
+<h4 id="heading-3">&nbsp;Profit / Loss Statement (Year-on-Year)</h4>
+<div class="container">
+  <h5 id="num-data-1">Numerical data expressed in Crores (₹) except EPS</h5>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fiscal-year"><b><i>Fiscal Year</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="fiscal-year1"><b><i>Mar 2012</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year2"><b><i>Mar 2013</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year3"><b><i>Mar 2014</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="fiscal-year4"><b><i>Mar 2015</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="fiscal-year5"><b><i>Mar 2016</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="fiscal-year6"><b><i>Mar 2017</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="fiscal-year7"><b><i>Mar 2018</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="fiscal-year8"><b><i>Mar 2019</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="fiscal-year9"><b><i>Mar 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="fiscal-year10"><b><i>Mar 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="fiscal-year11"><b><i>Mar 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="fiscal-year12"><b><i>Mar 2023</i></b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="r-pl"><b><i>Revenue</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="r-pl1">48894</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="r-pl2">62989</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="r-pl3">81809</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="r-pl4">94648</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="r-pl5">108646</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="r-pl6">117966</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="r-pl7">123104</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="r-pl8">146463</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="r-pl9">156949</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="r-pl10">164177</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="r-pl11">191754</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="r-pl12">225458</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ex-pl"><b><i>Expenses</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ex-pl1">34459</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ex-pl2">44950</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ex-pl3">56657</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ex-pl4">70167</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ex-pl5">77969</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ex-pl6">85655</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ex-pl7">90588</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ex-pl8">106957</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ex-pl9">114840</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ex-pl10">117631</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ex-pl11">138697</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ex-pl12">166199</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="op-pl"><b><i>Operating Profit</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="op-pl1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-pl2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-pl3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="op-pl4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="op-pl5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="op-pl6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="op-pl7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="op-pl8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="op-pl9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="op-pl10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="op-pl11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="op-pl12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="op-pl-percent"><b><i>OPM (%)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="op-pl1-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-pl2-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="op-pl3-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="op-pl4-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="op-pl5-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="op-pl6-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="op-pl7-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="op-pl8-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="op-pl9-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="op-pl10-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="op-pl11-percent">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="op-pl12-percent">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="oi-pl"><b><i>Other Income</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="oi-pl1">428</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oi-pl2">1178</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oi-pl3">1637</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="oi-pl4">3720</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="oi-pl5">3084</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="oi-pl6">4221</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="oi-pl7">3642</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="oi-pl8">4311</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="oi-pl9">4592</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="oi-pl10">1916</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="oi-pl11">4018</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="oi-pl12">3449</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="i-pl"><b><i>Interest</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="i-pl1">22</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-pl2">48</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-pl3">39</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="i-pl4">104</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="i-pl5">33</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="i-pl6">32</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="i-pl7">52</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="i-pl8">198</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="i-pl9">924</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="i-pl10">637</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="i-pl11">784</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="i-pl12">779</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="d-pl"><b><i>Deprecia-tion</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="d-pl1">918</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="d-pl2">1080</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="d-pl3">1349</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="d-pl4">1799</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="d-pl5">1888</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="d-pl6">1987</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="d-pl7">2014</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="d-pl8">2056</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="d-pl9">3529</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="d-pl10">4065</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="d-pl11">4604</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="d-pl12">5022</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="pbt-pl"><b><i>PBT</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pbt-pl1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pbt-pl2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pbt-pl3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="pbt-pl4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="pbt-pl5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="pbt-pl6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="pbt-pl7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="pbt-pl8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="pbt-pl9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="pbt-pl10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="pbt-pl11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="pbt-pl12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="tax-percent-pl"><b><i>Tax (%)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="tax-percent-pl1">24%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tax-percent-pl2">22%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tax-percent-pl3">24%</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="tax-percent-pl4">24%</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="tax-percent-pl5">24%</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="tax-percent-pl6">24%</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="tax-percent-pl7">24%</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="tax-percent-pl8">24%</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="tax-percent-pl9">23%</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="tax-percent-pl10">26%</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="tax-percent-pl11">26%</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="tax-percent-pl12">26%</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="pat-pl"><b><i>Net Profit (PAT)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="pat-pl1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pat-pl2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="pat-pl3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="pat-pl4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="pat-pl5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="pat-pl6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="pat-pl7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="pat-pl8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="pat-pl9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="pat-pl10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="pat-pl11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="pat-pl12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="eps-pl"><b><i>EPS (₹)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="eps-pl1">26.60</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="eps-pl2">35.55</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="eps-pl3">48.92</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="eps-pl4">50.68</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="eps-pl5">61.58</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="eps-pl6">66.71</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="eps-pl7">67.46</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="eps-pl8">83.87</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="eps-pl9">86.19</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="eps-pl10">87.67</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="eps-pl11">104.75</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="eps-pl12">115.19</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="div-payout-pl"><b><i>Dividend Payout %</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="div-payout-pl1">47</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="div-payout-pl2">31</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="div-payout-pl3">33</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="div-payout-pl4">78</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="div-payout-pl5">35</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="div-payout-pl6">35</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="div-payout-pl7">37</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="div-payout-pl8">36</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="div-payout-pl9">85</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="div-payout-pl10">43</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="div-payout-pl11">41</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="div-payout-pl12">21</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="compounded1"><b><i>Compounded Revenue Growth (10 years)</i></b></p>
+      <p id="year1">---</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->  
+      <p id="compounded2"><b><i>Compounded Revenue Growth (5 years)</i></b></p>
+      <p id="year2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->  
+      <p id="compounded3"><b><i>Compounded Revenue Growth (1 year)</i></b></p>
+      <p id="year3">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="compounded4"><b><i>Compounded Net Profit Growth (10 years)</i></b></p>
+      <p id="year4">---</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->  
+      <p id="compounded5"><b><i>Compounded Net Profit Growth (5 years)</i></b></p>
+      <p id="year5">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->  
+      <p id="compounded6"><b><i>Compounded Net Profit Growth (1 year)</i></b></p>
+      <p id="year6">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="compounded7"><b><i>Return on Equity (10 years)</i></b></p>
+      <p id="year7">39.43%</p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->  
+      <p id="compounded8"><b><i>Return on Equity (5 years)</i></b></p>
+      <p id="year8">41.87%</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->  
+      <p id="compounded9"><b><i>Return on Equity (1 year)</i></b></p>
+      <p id="year9">47.05%</p>
+    </div>
+  </div>
+  <a href="#" id="understand-2"><h5>Understand Profit / Loss Statement</h5></a>
+</div>
+
+<h4 id="heading-4">&nbsp;Balance Sheet</h4>
+<div class="container">
+  <h5 id="num-data-2">Numerical data expressed in Crores (₹)</h5>
+  <h5 id="bs-equation">The balance sheet is based on the fundamental accounting equation:</h5>
+  <h5 id="bs-equation-1"> <i>Assets</i> = <i>Equity</i> + <em>Liabilities</em></h5>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fiscal-year-bs"><b><i>Fiscal Year</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="fiscal-year1-bs"><b><i>Mar 2012</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year2-bs"><b><i>Mar 2013</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year3-bs"><b><i>Mar 2014</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="fiscal-year4-bs"><b><i>Mar 2015</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="fiscal-year5-bs"><b><i>Mar 2016</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="fiscal-year6-bs"><b><i>Mar 2017</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="fiscal-year7-bs"><b><i>Mar 2018</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="fiscal-year8-bs"><b><i>Mar 2019</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="fiscal-year9-bs"><b><i>Mar 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="fiscal-year10-bs"><b><i>Mar 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="fiscal-year11-bs"><b><i>Mar 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="fiscal-year12-bs"><b><i>Mar 2023</i></b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <h5 id="e-bs"><b><i>Equity</i></b></h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="sc-bs"><b><i>Share Capital</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="sc-bs1">296</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="sc-bs2">296</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="sc-bs3">196</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="sc-bs4">196</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="sc-bs5">197</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="sc-bs6">197</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="sc-bs7">191</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="sc-bs8">375</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="sc-bs9">375</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="sc-bs10">370</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="sc-bs11">366</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="sc-bs12">366</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="rANDs-bs"><b><i>Reserves + Surplus</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="rANDs-bs1">29284</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rANDs-bs2">38350</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rANDs-bs3">48999</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="rANDs-bs4">50439</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="rANDs-bs5">70875</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="rANDs-bs6">86017</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="rANDs-bs7">84937</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="rANDs-bs8">89071</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="rANDs-bs9">83751</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="rANDs-bs10">86063</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="rANDs-bs11">88773</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="rANDs-bs12">90058</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="te-bs"><b><i>Total Equity</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="te-bs1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="te-bs2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="te-bs3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="te-bs4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="te-bs5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="te-bs6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="te-bs7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="te-bs8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="te-bs9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="te-bs10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="te-bs11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="te-bs12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <h5 id="l-bs"><b><i>Liabilities</i></b></h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="cl-bs"><b><i>Current Liabilities</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="cl-bs1">3083</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="cl-bs2">4270</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="cl-bs3">5536</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="cl-bs4">8831</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="cl-bs5">7541</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="cl-bs6">4905</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="cl-bs7">5094</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="cl-bs8">6292</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="cl-bs9">6740</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="cl-bs10">7860</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="cl-bs11">8045</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="cl-bs12">10515</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ltl-bs"><b><i>Long Term Liabilites</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ltl-bs1">1581</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ltl-bs2">1703</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ltl-bs3">1677</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ltl-bs4">1578</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ltl-bs5">991</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ltl-bs6">917</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ltl-bs7">707</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ltl-bs8">183</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ltl-bs9">18</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ltl-bs10">0</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ltl-bs11">0</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ltl-bs12">0</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ol-bs"><b><i>Other Liabilites</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ol-bs1">6785</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ol-bs2">7081</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ol-bs3">10124</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ol-bs4">11916</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ol-bs5">8442</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ol-bs6">10008</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ol-bs7">13950</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ol-bs8">17918</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ol-bs9">21062</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ol-bs10">27904</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ol-bs11">35922</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ol-bs12">34232</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="borrow-bs"><b><i>Borrow-ings</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="borrow-bs1">127</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="borrow-bs2">232</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="borrow-bs3">297</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="borrow-bs4">358</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="borrow-bs5">245</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="borrow-bs6">289</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="borrow-bs7">247</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="borrow-bs8">62</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="borrow-bs9">8174</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="borrow-bs10">7795</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="borrow-bs11">7818</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="borrow-bs12">7688</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="tl-bs"><b><i>Total Liabilities</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="tl-bs1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tl-bs2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tl-bs3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="tl-bs4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="tl-bs5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="tl-bs6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="tl-bs7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="tl-bs8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="tl-bs9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="tl-bs10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="tl-bs11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="tl-bs12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="tel-bs"><b><i>Total (Equity + Liabilities)</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="tel-bs1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tel-bs2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="tel-bs3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="tel-bs4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="tel-bs5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="tel-bs6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="tel-bs7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="tel-bs8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="tel-bs9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="tel-bs10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="tel-bs11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="tel-bs12">---</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <h5 id="a-bs"><b><i>Assets</i></b></h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fa-bs"><b><i>Fixed Assets</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="fa-bs1">8662</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fa-bs2">9828</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fa-bs3">9544</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="fa-bs4">11638</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="fa-bs5">11774</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="fa-bs6">11701</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="fa-bs7">11973</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="fa-bs8">12290</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="fa-bs9">20928</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="fa-bs10">21021</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="fa-bs11">21298</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="fa-bs12">20515</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ca-bs"><b><i>Current Assets</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ca-bs1">10055</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ca-bs2">21040</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ca-bs3">28740</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ca-bs4">30071</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ca-bs5">32864</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ca-bs6">41271</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ca-bs7">48243</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ca-bs8">55640</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ca-bs9">50009</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ca-bs10">54612</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ca-bs11">61027</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ca-bs12">61229</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="oa-bs"><b><i>Other Assets</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="oa-bs1">21089</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oa-bs2">19167</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="oa-bs3">25111</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="oa-bs4">29947</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="oa-bs5">32831</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="oa-bs6">28929</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="oa-bs7">27399</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="oa-bs8">28763</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="oa-bs9">32703</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="oa-bs10">37126</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="oa-bs11">40554</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="oa-bs12">41243</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="i-bs"><b><i>Invest-ments</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="i-bs1">1350</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-bs2">1897</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-bs3">3434</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="i-bs4">1662</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="i-bs5">10822</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="i-bs6">20432</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="i-bs7">17511</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="i-bs8">17208</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="i-bs9">16480</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="i-bs10">17233</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="i-bs11">18045</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="i-bs12">19872</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ta-bs"><b><i>Total Assets</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ta-bs1"></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ta-bs2"></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ta-bs3"></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ta-bs4"></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ta-bs5"></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ta-bs6"></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ta-bs7"></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ta-bs8"></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ta-bs9"></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ta-bs10"></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ta-bs11"></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ta-bs12"></p>
+    </div>
+  </div>
+  <a href="#" id="understand-3"><h5>Understand Balance Sheet</h5></a>
+</div>
+
+<h4 id="heading-5">&nbsp;Cash Flows</h4>
+<div class="container">
+  <h5 id="num-data-3">Numerical data expressed in Crores (₹)</h5>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fiscal-year"><b><i>Fiscal Year</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="fiscal-year1"><b><i>Mar 2012</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year2"><b><i>Mar 2013</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-year3"><b><i>Mar 2014</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="fiscal-year4"><b><i>Mar 2015</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="fiscal-year5"><b><i>Mar 2016</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="fiscal-year6"><b><i>Mar 2017</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="fiscal-year7"><b><i>Mar 2018</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="fiscal-year8"><b><i>Mar 2019</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="fiscal-year9"><b><i>Mar 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="fiscal-year10"><b><i>Mar 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="fiscal-year11"><b><i>Mar 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="fiscal-year12"><b><i>Mar 2023</i></b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="o-cashflow"><b><i>Operating cash flow</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="o-cashflow1">7127</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="o-cashflow2">11615</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="o-cashflow3">14751</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="o-cashflow4">19369</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="o-cashflow5">19109</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="o-cashflow6">25223</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="o-cashflow7">25067</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="o-cashflow8">28593</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="o-cashflow9">32369</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="o-cashflow10">38802</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="o-cashflow11">39949</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="o-cashflow12">41965</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="i-cashflow"><b><i>Investing cash flow</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="i-cashflow1">-2727</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-cashflow2">-6038</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="i-cashflow3">-9452</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="i-cashflow4">-1807</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="i-cashflow5">-5010</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="i-cashflow6">-16895</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="i-cashflow7">3104</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="i-cashflow8">1645</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="i-cashflow9">8968</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="i-cashflow10">-7956</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="i-cashflow11">-738</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="i-cashflow12">548</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="f-cashflow"><b><i>Financing cash flow</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="f-cashflow1">-3955</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="f-cashflow2">-5729</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="f-cashflow3">-5673</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="f-cashflow4">-17168</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="f-cashflow5">-9666</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="f-cashflow6">-11026</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="f-cashflow7">-26885</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="f-cashflow8">-27897</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="f-cashflow9">-39915</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="f-cashflow10">-32634</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="f-cashflow11">-33581</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="f-cashflow12">-47878</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="n-cashflow"><b><i>Net cash flow</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="n-cashflow1">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="n-cashflow2">---</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="n-cashflow3">---</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="n-cashflow4">---</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="n-cashflow5">---</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="n-cashflow6">---</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="n-cashflow7">---</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="n-cashflow8">---</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="n-cashflow9">---</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="n-cashflow10">---</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="n-cashflow11">---</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="n-cashflow12">---</p>
+    </div>
+  </div>
+  <a href="#" id="understand-4"><h5>Understand Cash Flows</h5></a>
+</div>
+
+<!-- Shareholding Pattern pie-diagram or pie-chart -->
+<h4 id="heading-6">&nbsp;Shareholding Pattern (%) as of Mar 2023</h4>
+<div class="container1">
+  <canvas id="pieChart"></canvas>
+</div>
+
+<!-- shareholding pattern table -->
+<h4 id="heading-7">&nbsp;Shareholding Pattern (%) Trends</h4>
+<div class="container">
+  <h5 id="num-data-4">Numerical data expressed in %</h5>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="fiscal-quarter-sp"><b><i>Fiscal Quarter</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="fiscal-quarter-sp1"><b><i>Mar 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-quarter-sp2"><b><i>Jun 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="fiscal-quarter-sp3"><b><i>Sep 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="fiscal-quarter-sp4"><b><i>Dec 2020</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="fiscal-quarter-sp5"><b><i>Mar 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="fiscal-quarter-sp6"><b><i>Jun 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="fiscal-quarter-sp7"><b><i>Sep 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="fiscal-quarter-sp8"><b><i>Dec 2021</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="fiscal-quarter-sp9"><b><i>Mar 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="fiscal-quarter-sp10"><b><i>Jun 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="fiscal-quarter-sp11"><b><i>Sep 2022</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="fiscal-quarter-sp12"><b><i>Dec 2022</i></b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="p-sp"><b><i>Promoter</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="p-sp1">72.05</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="p-sp2">72.05</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="p-sp3">72.05</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="p-sp4">72.19</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="p-sp5">72.19</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="p-sp6">72.19</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="p-sp7">72.19</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="p-sp8">72.30</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="p-sp9">72.30</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="p-sp10">72.30</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="p-sp11">72.30</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="p-sp12">72.30</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="ii-sp"><b><i>Institu-tional Investors</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="ii-sp1">18.33</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ii-sp2">18.37</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="ii-sp3">18.52</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="ii-sp4">18.40</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="ii-sp5">18.14</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="ii-sp6">17.95</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="ii-sp7">17.89</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="ii-sp8">17.47</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="ii-sp9">16.64</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="ii-sp10">15.99</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="ii-sp11">15.54</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="ii-sp12">15.43</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="g-sp"><b><i>Govern-ment</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="g-sp1">3.15</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="g-sp2">3.15</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="g-sp3">3.15</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="g-sp4">3.14</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="g-sp5">3.12</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="g-sp6">3.12</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="g-sp7">3.12</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="g-sp8">3.12</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="g-sp9">3.13</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="g-sp10">3.13</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="g-sp11">3.13</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="g-sp12">3.13</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- 1st column info -->  
+      <p id="rii-sp"><b><i>RII</i></b></p>
+    </div>
+    <div class="col">
+      <!-- 2nd column info -->
+      <p id="rii-sp1">6.47</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rii-sp2">6.43</p>
+    </div>
+    <div class="col">
+      <!-- 3rd column info -->
+      <p id="rii-sp3">6.28</p>
+    </div>
+    <div class="col">
+      <!-- 4th column info -->
+      <p id="rii-sp4">6.27</p>
+    </div>
+    <div class="col">
+      <!-- 5th column info -->
+      <p id="rii-sp5">6.55</p>
+    </div>
+    <div class="col">
+      <!-- 6th column info -->
+      <p id="rii-sp6">6.74</p>
+    </div>
+    <div class="col">
+      <!-- 7th column info -->
+      <p id="rii-sp7">6.80</p>
+    </div>
+    <div class="col">
+      <!-- 8th column info -->
+      <p id="rii-sp8">7.11</p>
+    </div>
+    <div class="col">
+      <!-- 9th column info -->
+      <p id="rii-sp9">7.93</p>
+    </div>
+    <div class="col">
+      <!-- 10th column info -->
+      <p id="rii-sp10">8.58</p>
+    </div>
+    <div class="col">
+      <!-- 11th column info -->
+      <p id="rii-sp11">9.03</p>
+    </div>
+    <div class="col">
+      <!-- 12th column info -->
+      <p id="rii-sp12">9.14</p>
+    </div>
+  </div>
+  <a href="#" id="understand-5"><h5>Understand Shareholding Pattern</h5></a>
+</div>
+  
+
+
+   <!-- <div id="chart", style="width: 100%; height: 500px;"></div> -->
+
+      <!-- adding bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- Add Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+      <!-- Add Chart.js -->
+	    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <!--  Google Charts API  -->
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+      <!-- Adding external JS -->
+      <script src="./js/company-details-and-fundamentals.js"></script>
+
+</body>
+</html>

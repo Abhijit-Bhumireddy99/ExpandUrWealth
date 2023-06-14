@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 and CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Domestic_Stocks_Discover.css">
+    <title>Discover</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./Domestic_Stocks_Discover.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discover
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/domestic_stocks">Domestic Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">US Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">Mutual Funds</a></li>
+                    <li><a class="dropdown-item" href="/ipo">IPO</a></li>
+                    <li><a class="dropdown-item" href="#">Gold</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/domestic_holdings">My Holdings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Watch-List</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn&Invest
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="#">Stock Market Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Market News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search about stocks here..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h3 id="welcome">Hi there, <%= name %>! let's build your wealth together!</h3>
+      <p id="welcome-tag">- <i>The world of stock market can be unpredictable. Do you have the flexibility and resilience to thrive in the face of uncertainty?</i></p>
+
+      <!-- Market Indices -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- 1st column info -->
+            <a href="#" id="nifty-50"><h5>Nifty 50 (Market Index)</h5></a>   
+            <p id="index1-price">---</p>
+          </div>
+          <div class="col">
+            <!-- 2nd column info -->
+            <a href="#" id="sensex"><h5>Sensex (Market Index)</h5></a>
+            <p id="index2-price">---</p>
+          </div>
+          <div class="col">
+            <!-- 3rd column info -->
+            <a href="#" id="bank-nifty"><h5>Bank Nifty (Market Index)</h5></a>
+            <p id="index3-price">---</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HTML heading less than <h2> -->
+      <div class="heading1">
+        <h3>Top 10 stocks of Indian Equity Market</h3>
+      </div>
+
+      
+<!-- Table of top 10 stocks -->
+<table class = table-light id="stock-table">
+  <thead>
+    <tr class="table-light">
+      <th>#</th>
+      <th>Company</th>
+      <th>Industry / Sector</th>
+      <th>Market Capitalization (in Crores (₹))</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Reliance Industries</td>
+      <td>Fuel, Gas, Oil</td>
+      <td id="market-cap-1">1584128.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Tata Consultancy Services</td>
+      <td>Information Tech</td>
+      <td id="market-cap-2">1319090.00</td>
+  </tr>
+  <tr class>
+      <td>3</td>
+      <td>HDFC Bank</td>
+      <td>Banking</td>
+      <td id="market-cap-3">923530.00</td>
+  </tr>
+  <tr>
+      <td>4</td>
+      <td>Infosys</td>
+      <td>Information Tech</td>
+      <td id="market-cap-4">665140.00</td>
+  </tr>
+  <tr>
+      <td>5</td>
+      <td>ICICI Bank</td>
+      <td>Banking</td>
+      <td id="market-cap-5">609420.00</td>
+  </tr>
+  <tr>
+      <td>6</td>
+      <td>Hindustan Unilever</td>
+      <td>FMCG</td>
+      <td id="market-cap-6">597650.00</td>
+  </tr>
+  <tr>
+      <td>7</td>
+      <td>State Bank of India</td>
+      <td>Banking</td>
+      <td id="market-cap-7">480180.00</td>
+  </tr>
+  <tr>
+      <td>8</td>
+      <td>ITC</td>
+      <td>Multi Industry / Sector</td>
+      <td id="market-cap-8">478980.00</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Bharti Airtel</td>
+    <td>Telecommunication</td>
+    <td id="market-cap-9">443580.00</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Bajaj Finance</td>
+    <td>Financial</td>
+    <td id="market-cap-10">387710.00</td>
+  </tr>
+  </tbody>
+</table>
+
+    <div class="heading2">
+      <h3>Stocks with high volume today on ExpandUrWealth</h3>
+    </div>    
+
+     <!-- high volume stocks (volume - number of shares that are bought or sold) -->
+     <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- 1st column info -->
+          <a href="#" id="heading-volume-1"><h6>vedanta (Metals & Mining)</h6></a>   
+          <p id="volume-1">---</p>
+        </div>
+        <div class="col">
+          <!-- 2nd column info -->
+          <a href="#" id="heading-volume-2"><h6>Zydus Lifesciences (Pharma)</h6></a>
+          <p id="volume-2">---</p>
+        </div>
+        <div class="col">
+          <!-- 3rd column info -->
+          <a href="#" id="heading-volume-3"><h6>Tata Steel (Metals & Mining)</h6></a>
+          <p id="volume-3">---</p>
+        </div>
+        <div class="col">
+          <!-- 4th column info -->
+          <a href="#" id="check-out-1"><h6>Check Out More... ></h6></a>
+          <p>High Trading Volume Stocks</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading3">
+      <h3>Stocks with positive returns <b>(&uarr;)</b> today</h3>
+    </div>    
+
+    <!-- stocks with +ve returns -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- 1st column info -->
+          <a href="#" id="positive-stock-1"><h6>IndusInd Bank (Banking)</h6></a>   
+          <p id="positive-1">---</p>
+        </div>
+        <div class="col">
+          <!-- 2nd column info -->
+          <a href="#" id="positive-stock-2"><h6>Paytm (Fin. Tech.)</h6></a>
+          <p id="positive-2">---</p>
+        </div>
+        <div class="col">
+          <!-- 3rd column info -->
+          <a href="#" id="positive-stock-3"><h6>Avenue Supermarts (Consumer Retail)</h6></a>
+          <p id="positive-3">---</p>
+        </div>
+        <div class="col">
+          <!-- 4th column info -->
+          <a href="#" id="check-out-2"><h6>Check Out More... ></h6></a>
+          <p>Profit-Makers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading4">
+      <h3>Stocks with negative returns <b>(&darr;)</b> today</h3>
+    </div>  
+
+     <!-- stocks with -ve returns -->
+     <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- 1st column info -->
+          <a href="#" id="negative-stock-1"><h6>Adani Green (Renewable Energy)</h6></a>   
+          <p id="negative-1">---</p>
+        </div>
+        <div class="col">
+          <!-- 2nd column info -->
+          <a href="#" id="negative-stock-2"><h6>Adani Wilmar (FMCG)</h6></a>
+          <p id="negative-2">---</p>
+        </div>
+        <div class="col">
+          <!-- 3rd column info -->
+          <a href="#" id="negative-stock-3"><h6>Wipro (Information Tech.)</h6></a>
+          <p id="negative-3">---</p>
+        </div>
+        <div class="col">
+          <!-- 4th column info -->
+          <a href="#" id="check-out-3"><h6>Check Out More... ></h6></a>
+          <p>Loss-Makers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading5">
+      <h3> Stocks in News</h3>
+    </div>  
+
+     <!-- Stocks in News -->
+     <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- 1st column info -->
+          <a href="#" id="news-stock-1"><h6>SBI Cards (Financial Services)</h6></a>   
+          <p id="news-1">---</p>
+        </div>
+        <div class="col">
+          <!-- 2nd column info -->
+          <a href="#" id="news-stock-2"><h6>Titan Company (Accessories)</h6></a>
+          <p id="news-2">---</p>
+        </div>
+        <div class="col">
+          <!-- 3rd column info -->
+          <a href="#" id="news-stock-3"><h6>Mindtree (Information Tech.)</h6></a>
+          <p id="news-3">---</p>
+        </div>
+        <div class="col">
+          <!-- 4th column info -->
+          <a href="#" id="check-out-4"><h6>Check Out More... ></h6></a>
+          <p>Stock Market News</p>
+        </div>
+      </div>
+    </div>
+
+  <br> <br>
+
+  <!-- Footer -->
+  <footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #1c2331"
+  >
+<!-- Section: Social media -->
+<section
+     class="d-flex justify-content-between p-4"
+     style="background-color: darkgreen"
+     >
+<!-- Left -->
+<div class="me-5">
+<span>Don't be a stranger, connect with us on social networks and stay up to date.:</span>
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+<a href="#" class="text-white me-4">
+  <b class="fab fa-twitter">Twitter</b>
+</a>
+<a href="#" class="text-white me-4">
+  <b class="fab fa-google">Google</b>
+</a>
+<a href="" class="text-white me-4">
+  <b class="fab fa-instagram">Insta</b>
+</a>
+<a href="" class="text-white me-4">
+  <b class="fab fa-linkedin">LinkedIn</b>
+</a>
+<a href="" class="text-white me-4">
+  <b class="fab fa-Telegram">Telegram</b>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold">ExpandUrWealth</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      We offer various investment products and helps provide financial education to the new, inexperienced investors
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Products</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+    />
+    <p>
+      <a href="#!" class="text-white">Stocks</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Mutual Funds</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">IPOs</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Digital Gold</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Useful links</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="#!" class="text-white">About Us</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Support</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Pricing</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Account</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Careers</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Terminology</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Contact</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p><i class="fas fa-home mr-3"></i> Fairfax, VA 22030, US</p>
+    <p><i class="fas fa-envelope mr-3"></i> info@expandurwealth.com</p>
+    <p><i class="fas fa-phone mr-3"></i> +1 (703) 401-3887</p>
+    <p><i class="fas fa-print mr-3"></i> +1 (571) 992-6542</p>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: rgba(0, 0, 0, 0.2)"
+ >
+© 2023 ExpandUrWealth: Made with a sprinkle of investing magic
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+      
+      <!-- adding bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+
+      <!-- adding external JS -->
+      <script src="./js/Domestic_Stocks_Discover.js"></script>
+
+</body>
+</html>
