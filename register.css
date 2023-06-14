@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1; /* fallback color */
+    background-image: url("../img/body_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-background-size: cover; /* IE 9 */
+    background-size: cover\9; /* IE 8 */
+}
+
+.container {
+    margin-left: 90px;
+}
+
+section.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22vh; /* set the height to full viewport height to center it vertically */
+}
+
+.row {
+    border-radius: 30px;
+    margin: 500px auto 0;
+    height: 660px;
+}
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.register {
+    margin-top: -55px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.register_labels {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form {
+    margin-left: 30px;
+}
+
+.custom-input {
+    width: 120%;
+}
+
+.btn2 {
+    border: none;
+    outline: none;
+    height:50px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background: white;
+    border: 1px solid;
+    color: black;
+}
+
+.input-group {
+    position: relative;
+    width: 120%;
+}
+
+.input-group input[type="password"] {
+    padding-right: 25px;
+}
+
+.input-group button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

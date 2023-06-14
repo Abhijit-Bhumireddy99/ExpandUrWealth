@@ -1,0 +1,144 @@
+body {
+  background-color: white;
+}
+
+form {
+  background-color: whitesmoke;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: black;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="button"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0080d6;
+}
+
+button[type="button"]:hover {
+  background-color: #0069d9;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 18px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.question-container {
+  position: relative;
+}
+
+.question-mark {
+  display: inline-block;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.question-mark:hover {
+  background-color: #0080d6;
+}
+
+.question-mark-text {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  z-index: 1;
+}
+
+.question-mark:hover + .question-mark-text {
+  display: block;
+}
+
+#register-text b {
+  color: green; 
+}
+
+#register-text strong {
+  color: red;
+}
+
+#register-text i {
+  color: black;
+}
+
+

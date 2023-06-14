@@ -1,0 +1,131 @@
+#heading-1, #heading-2, #heading-3, #para-1, #heading-4, #heading-5, #heading-6, #heading-7 {
+    color: white;
+}
+
+#para-1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: darkgray;
+    flex: 1;
+    text-align: center;
+}
+
+#market-cap, #pe, #industry-pe, #div-yield, #roce, #roe, #bv, #pb, #fv, #de, #eps, #pledge-percent, #sg, #sg3, #sg5,
+#pg, #pg3, #pg5, #roi, #holding1, #holding2, #fiscal-quarter, #q1-res, #q2-res, #q3-res, #q4-res, #q5-res, #q5-res,
+#q6-res, #q7-res, #q8-res, #q9-res, #q10-res, #q11-res, #q12-res, #q13-res, #num-data, #rq, #rq1, #rq2, #rq3, #rq4,
+#rq5, #rq6, #rq7, #rq8, #rq9, #rq10, #rq11, #rq12, #rq13, #ex-q, #ex-q1, #ex-q2, #ex-q3, #ex-q4, #ex-q5, #ex-q6, 
+#ex-q7, #ex-q8, #ex-q9, #ex-q10, #ex-q11, #ex-q12, #ex-q13, #op-q, #op-q1, #op-q2, #op-q3, #op-q4, #op-q5, #op-q6, 
+#op-q7, #op-q8, #op-q9, #op-q10, #op-q11, #op-q12, #op-q13, #op-q-percent, #op-q1-percent, #op-q2-percent, 
+#op-q3-percent, #op-q4-percent, #op-q5-percent, #op-q6-percent, #op-q7-percent, #op-q8-percent, #op-q9-percent, 
+#op-q10-percent, #op-q11-percent, #op-q12-percent, #op-q13-percent, #oi-q, #oi-q1, #oi-q2, #oi-q3, #oi-q4, #oi-q5, 
+#oi-q6, #oi-q7, #oi-q8, #oi-q9, #oi-q10, #oi-q11, #oi-q12, #oi-q13, #i-q, #i-q1, #i-q2, #i-q3, #i-q4, #i-q5, #i-q6, 
+#i-q7, #i-q8, #i-q9, #i-q10, #i-q11, #i-q12, #i-q13, #d-q, #d-q1, #d-q2, #d-q3, #d-q4, #d-q5, #d-q6, #d-q7, #d-q8,
+#d-q9, #d-q10, #d-q11, #d-q12, #d-q13, #pbt-q, #pbt-q1, #pbt-q2, #pbt-q3, #pbt-q4, #pbt-q5, #pbt-q6, #pbt-q7, #pbt-q8,
+#pbt-q9, #pbt-q10, #pbt-q11, #pbt-q12, #pbt-q13, #tax-percent-q, #tax-percent-q1, #tax-percent-q2, #tax-percent-q3, 
+#tax-percent-q4, #tax-percent-q5, #tax-percent-q6, #tax-percent-q7, #tax-percent-q8, #tax-percent-q9, #tax-percent-q10,
+#tax-percent-q11, #tax-percent-q12, #tax-percent-q13, #pat-q, #pat-q1, #pat-q2, #pat-q3, #pat-q4, #pat-q5, #pat-q6, 
+#pat-q7, #pat-q8, #pat-q9, #pat-q10, #pat-q11, #pat-q12, #pat-q13, #eps-q, #eps-q1, #eps-q2, #eps-q3, #eps-q4, #eps-q5,
+#eps-q6, #eps-q7, #eps-q8, #eps-q9, #eps-q10, #eps-q11, #eps-q12, #eps-q13, #fiscal-year, #fiscal-year1, #fiscal-year2, 
+#fiscal-year3, #fiscal-year4, #fiscal-year5, #fiscal-year6, #fiscal-year7, #fiscal-year8, #fiscal-year9, #fiscal-year10, 
+#fiscal-year11, #fiscal-year12, #r-pl, #r-pl1, #r-pl2, #r-pl3, #r-pl4, #r-pl5, #r-pl6, #r-pl7, #r-pl8, #r-pl9, #r-pl10,
+#r-pl11, #r-pl12, #ex-pl, #ex-pl1, #ex-pl2, #ex-pl3, #ex-pl4, #ex-pl5, #ex-pl6, #ex-pl7, #ex-pl8, #ex-pl9, #ex-pl10,
+#ex-pl11, #ex-pl12, #op-pl, #op-pl1, #op-pl2, #op-pl3, #op-pl4, #op-pl5, #op-pl6, #op-pl7, #op-pl8, #op-pl9, #op-pl10,
+#op-pl11, #op-pl12, #op-pl-percent, #op-pl1-percent, #op-pl2-percent, #op-pl3-percent, #op-pl4-percent, #op-pl5-percent,
+#op-pl6-percent, #op-pl7-percent, #op-pl8-percent, #op-pl9-percent, #op-pl10-percent, #op-pl11-percent, #op-pl12-percent,
+#oi-pl, #oi-pl1, #oi-pl2, #oi-pl3, #oi-pl4, #oi-pl5, #oi-pl6, #oi-pl7, #oi-pl8, #oi-pl9, #oi-pl10, #oi-pl11, #oi-pl12,
+#i-pl, #i-pl1, #i-pl2, #i-pl3, #i-pl4, #i-pl5, #i-pl6, #i-pl7, #i-pl8, #i-pl9, #i-pl10, #i-pl11, #i-pl12, #d-pl, #d-pl1,
+#d-pl2, #d-pl3, #d-pl4, #d-pl5, #d-pl6, #d-pl7, #d-pl8, #d-pl9, #d-pl10, #d-pl11, #d-pl12, #pbt-pl, #pbt-pl1, #pbt-pl2,
+#pbt-pl3, #pbt-pl4, #pbt-pl5, #pbt-pl6, #pbt-pl7, #pbt-pl8, #pbt-pl9, #pbt-pl10, #pbt-pl11, #pbt-pl12, #tax-percent-pl,
+#tax-percent-pl1, #tax-percent-pl2, #tax-percent-pl3, #tax-percent-pl4, #tax-percent-pl5, #tax-percent-pl6, 
+#tax-percent-pl7, #tax-percent-pl8, #tax-percent-pl9, #tax-percent-pl10,#tax-percent-pl11, #tax-percent-pl12, #pat-pl,
+#pat-pl1, #pat-pl2, #pat-pl3, #pat-pl4, #pat-pl5, #pat-pl6, #pat-pl7, #pat-pl8, #pat-pl9, #pat-pl10, #pat-pl11, 
+#pat-pl12, #eps-pl, #eps-pl1, #eps-pl2, #eps-pl3, #eps-pl4, #eps-pl5, #eps-pl6, #eps-pl7, #eps-pl8, #eps-pl9, #eps-pl10,
+#eps-pl11, #eps-pl12, #div-payout-pl, #div-payout-pl1, #div-payout-pl2, #div-payout-pl3, #div-payout-pl4, 
+#div-payout-pl5, #div-payout-pl6, #div-payout-pl7, #div-payout-pl8, #div-payout-pl9, #div-payout-pl10, #div-payout-pl11,
+#div-payout-pl12, #compounded1, #year1, #compounded2, #year2, #compounded3, #year3, #compounded4, #year4, #compounded5, 
+#year5, #compounded6, #year6, #compounded7, #year7, #compounded8, #year8, #compounded9, #year9, #num-data-1, #num-data-2,
+#fiscal-year-bs, #fiscal-year1-bs, #fiscal-year2-bs, #fiscal-year3-bs, #fiscal-year4-bs, #fiscal-year5-bs, 
+#fiscal-year6-bs, #fiscal-year7-bs, #fiscal-year8-bs, #fiscal-year9-bs, #fiscal-year10-bs, #fiscal-year11-bs,
+#fiscal-year12-bs, #bs-equation, #bs-equation-1, #e-bs, #sc-bs, #sc-bs1, #sc-bs2, #sc-bs3, #sc-bs4, #sc-bs5, #sc-bs6,
+#sc-bs7, #sc-bs8, #sc-bs9, #sc-bs10, #sc-bs11, #sc-bs12, #rANDs-bs, #rANDs-bs1, #rANDs-bs2, #rANDs-bs3, #rANDs-bs4,
+#rANDs-bs5, #rANDs-bs6, #rANDs-bs7, #rANDs-bs8, #rANDs-bs9, #rANDs-bs10, #rANDs-bs11, #rANDs-bs12, #te-bs, #te-bs1,
+#te-bs2, #te-bs3, #te-bs4, #te-bs5, #te-bs6, #te-bs7, #te-bs8, #te-bs9, #te-bs10, #te-bs11, #te-bs12, #l-bs, #borrow-bs,
+#borrow-bs1, #borrow-bs2, #borrow-bs3, #borrow-bs4, #borrow-bs5, #borrow-bs6, #borrow-bs7, #borrow-bs8, #borrow-bs9,
+#borrow-bs10, #borrow-bs11, #borrow-bs12, #ol-bs, #ol-bs1, #ol-bs2, #ol-bs3, #ol-bs4, #ol-bs5, #ol-bs6, #ol-bs7, #ol-bs8,
+#ol-bs9, #ol-bs10, #ol-bs11, #ol-bs12, #ltl-bs, #ltl-bs1, #ltl-bs2, #ltl-bs3, #ltl-bs4, #ltl-bs5, #ltl-bs6, #ltl-bs7,
+#ltl-bs8, #ltl-bs9, #ltl-bs10, #ltl-bs11, #ltl-bs12, #cl-bs, #cl-bs1, #cl-bs2, #cl-bs3, #cl-bs4, #cl-bs5, #cl-bs6,
+#cl-bs7, #cl-bs8, #cl-bs9, #cl-bs10, #cl-bs11, #cl-bs12, #tl-bs, #tl-bs1, #tl-bs2, #tl-bs3, #tl-bs4, #tl-bs5, #tl-bs6,
+#tl-bs7, #tl-bs8, #tl-bs9, #tl-bs10, #tl-bs11, #tl-bs12, #tel-bs, #tel-bs1, #tel-bs2, #tel-bs3, #tel-bs4, #tel-bs5,
+#tel-bs6, #tel-bs7, #tel-bs8, #tel-bs9, #tel-bs10, #tel-bs11, #tel-bs12, #a-bs, #fa-bs, #fa-bs1, #fa-bs2,#fa-bs3,
+#fa-bs4, #fa-bs5, #fa-bs6, #fa-bs7, #fa-bs8, #fa-bs9, #fa-bs10, #fa-bs11, #fa-bs12, #ca-bs, #ca-bs1, #ca-bs2, #ca-bs3,
+#ca-bs4, #ca-bs5, #ca-bs6, #ca-bs7, #ca-bs8, #ca-bs9, #ca-bs10, #ca-bs11, #ca-bs12, #oa-bs, #oa-bs1, #oa-bs2, #oa-bs3,
+#oa-bs4, #oa-bs5, #oa-bs6, #oa-bs7, #oa-bs8, #oa-bs9, #oa-bs10, #oa-bs11, #oa-bs12, #i-bs, #i-bs1, #i-bs2, #i-bs3, 
+#i-bs4, #i-bs5, #i-bs6, #i-bs7, #i-bs8, #i-bs9, #i-bs10, #i-bs11, #i-bs12, #ta-bs, #ta-bs1, #ta-bs2, #ta-bs3, #ta-bs4,
+#ta-bs5, #ta-bs6, #ta-bs7, #ta-bs8, #ta-bs9, #ta-bs10, #ta-bs11, #ta-bs12, #num-data-3, #o-cashflow, #o-cashflow1,
+#o-cashflow2, #o-cashflow3, #o-cashflow4, #o-cashflow5, #o-cashflow6, #o-cashflow7, #o-cashflow8, #o-cashflow9,
+#o-cashflow10, #o-cashflow11, #o-cashflow12, #i-cashflow, #i-cashflow1, #i-cashflow2, #i-cashflow3, #i-cashflow4,
+#i-cashflow5, #i-cashflow6, #i-cashflow7, #i-cashflow8, #i-cashflow9, #i-cashflow10, #i-cashflow11, #i-cashflow12, 
+#f-cashflow, #f-cashflow1, #f-cashflow2, #f-cashflow3, #f-cashflow4, #f-cashflow5, #f-cashflow5, #f-cashflow6, 
+#f-cashflow7, #f-cashflow8, #f-cashflow9, #f-cashflow10, #f-cashflow11, #f-cashflow12, #n-cashflow, #n-cashflow1,
+#n-cashflow2, #n-cashflow3, #n-cashflow4, #n-cashflow5, #n-cashflow6, #n-cashflow7, #n-cashflow8, #n-cashflow9, 
+#n-cashflow10, #n-cashflow11, #n-cashflow12, #num-data-4, #fiscal-quarter-sp, #fiscal-quarter-sp1, #fiscal-quarter-sp2,
+#fiscal-quarter-sp3, #fiscal-quarter-sp4, #fiscal-quarter-sp5, #fiscal-quarter-sp6, #fiscal-quarter-sp7, 
+#fiscal-quarter-sp8, #fiscal-quarter-sp9, #fiscal-quarter-sp10, #fiscal-quarter-sp11, #fiscal-quarter-sp12, #p-sp,
+#p-sp1, #p-sp2, #p-sp3, #p-sp4, #p-sp5, #p-sp6, #p-sp7, #p-sp8, #p-sp9, #p-sp10, #p-sp11, #p-sp12, #ii-sp, #ii-sp1,
+#ii-sp2, #ii-sp3, #ii-sp4, #ii-sp5, #ii-sp6, #ii-sp7, #ii-sp8, #ii-sp9, #ii-sp10, #ii-sp11, #ii-sp12, #g-sp, #g-sp1,
+#g-sp2, #g-sp3, #g-sp4, #g-sp5, #g-sp6, #g-sp7, #g-sp8, #g-sp9, #g-sp10, #g-sp11, #g-sp12, #rii-sp, #rii-sp1,
+#rii-sp2, #rii-sp3, #rii-sp4, #rii-sp5, #rii-sp6, #rii-sp7, #rii-sp8, #rii-sp9, #rii-sp10, #rii-sp11, #rii-sp12
+{
+    color: black;
+}
+
+#understand, #understand-1, #understand-2, #understand-3, #understand-4, #understand-5 {
+    text-decoration: none;
+}
+
+#bs-equation-1 i {
+    color: green;
+}
+
+#bs-equation-1 em {
+    color: red;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,91 @@
+body {
+    background-color: white;
+  }
+  
+h3 {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+#no-account {
+    text-align: center;
+  }  
+
+#no-account a {
+    color: green;
+    text-decoration: none;
+  }
+  
+#no-account a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+form {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+form div {
+    margin: 10px 0;
+  }
+  
+form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+button[type="button"]:hover {
+  background-color: #0069d9;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+
+#login-text b{
+    color: green;
+  }
+
+
+
+  

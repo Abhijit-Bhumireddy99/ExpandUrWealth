@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+/* align-items :- determines how the items are positioned vertically within their container.
+   align-items : center :- items are centered vertically in the container 
+   justify-content :- determines how the items are positioned horizontally within their container.
+   justify-content : center :- items are centered horizontally in the container
+   text-align :- determines whether the text is aligned to the left, center, right, or justified within its container.
+   text-align : center :- text is centered horizontally in the container
+ */
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.col {
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.table-light {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+
+  td {
+    color: white;
+  }
+
+  tr {
+    background-color: black;
+  }
+
+  #stock-table tr:hover {
+    cursor: pointer;
+  }
+
+  #stock-table th {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .table-light #returns-a, #returns-a-percent, #returns-c, #returns-c-percent, #returns-e, #returns-e-percent,
+  #returns-f, #returns-f-percent, #returns-j, #returns-j-percent {
+    color: green;
+  }
+
+  .table-light #returns-b, #returns-b-percent, #returns-d, #returns-d-percent, #returns-g, #returns-g-percent, 
+  #returns-h, #returns-h-percent, #returns-i, #returns-i-percent {
+    color: red;
+  }
+  
+  #heading-1 {
+    color: white;
+    text-align: center;
+  }
+
+  #total-returns {
+    color: green;
+  }
+
+  #total-returns-percent {
+    color: green;
+  }
+
+  #nifty-50, #sensex, #bank-nifty {
+    text-decoration: none;
+    color: white;
+  }
+
+  #nifty-50:hover, #sensex:hover, #bank-nifty:hover {
+    color: cyan;
+  }
+
+  #stock-a:hover, #stock-c:hover, #stock-e:hover, #stock-f:hover, #stock-j:hover {
+    color: green;
+  }
+
+  #stock-b:hover, #stock-d:hover, #stock-g:hover, #stock-h:hover, #stock-i:hover {
+    color: red;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: whitesmoke;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }
+
+  .buy-button {
+    background-color: green;
+    border-radius: 10px;
+    border-color: green;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 120px;
+  }
+
+  .sell-button {
+    background-color: red;
+    border-radius: 10px;
+    border-color: red;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 120px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #about-stock {
+    text-decoration: none;
+  }
+  
+  a.text-white {
+    text-decoration: none;
+  }
+  
+  a.text-white:hover {
+    color: gold !important;
+  }

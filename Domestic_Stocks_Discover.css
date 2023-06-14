@@ -1,0 +1,194 @@
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+   Media queries can be used to check many things, such as: (1) width and height of the viewport,(2) width and height of 
+   the device, (3) orientation (is the tablet/phone in landscape or portrait mode?), (4) resolution 
+   Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to 
+   desktops, laptops, tablets, and mobile phones. */
+   @media (min-width: 320px) and (max-width: 374px) {
+
+   }
+
+   @media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-item h4, p, .btn {
+        font-size: 9px;
+    }
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+.nav-item h6 {
+    color: whitesmoke;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* align-items :- determines how the items are positioned vertically within their container.
+   align-items : center :- items are centered vertically in the container 
+   justify-content :- determines how the items are positioned horizontally within their container.
+   justify-content : center :- items are centered horizontally in the container
+   text-align :- determines whether the text is aligned to the left, center, right, or justified within its container.
+   text-align : center :- text is centered horizontally in the container
+ */
+ .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.col {
+    border-style: solid;
+    border-color: darkgray;
+}
+
+#nifty-50, #sensex, #bank-nifty, #heading-volume-1, #heading-volume-2, #heading-volume-3, #check-out-1,
+#positive-stock-1, #positive-stock-2, #positive-stock-3, #check-out-2, #negative-stock-1, #negative-stock-2, 
+#negative-stock-3, #check-out-3, #news-stock-1, #news-stock-2, #news-stock-3, #check-out-4 {
+    text-decoration: none;
+    color: white;
+  }
+
+  #nifty-50:hover, #sensex:hover, #bank-nifty:hover, #heading-volume-1:hover, #heading-volume-2:hover, 
+  #heading-volume-3:hover, #check-out-1:hover, #positive-stock-1:hover, #positive-stock-2:hover, 
+  #positive-stock-3:hover, #check-out-2:hover, #negative-stock-1:hover, #negative-stock-2:hover, 
+  #negative-stock-3:hover, #check-out-3:hover, #news-stock-1:hover, #news-stock-2:hover, #news-stock-3:hover,
+  #check-out-4:hover {
+    color: cyan;
+  }
+
+  .heading1 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .table-light {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+
+  td {
+    color: white;
+  }
+
+  tr {
+    background-color: black;
+  }
+
+  #stock-table tr:hover {
+    cursor: pointer;
+  }
+
+  #stock-table th {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .table-light #returns-a, #returns-a-percent, #returns-c, #returns-c-percent, #returns-e, #returns-e-percent,
+  #returns-f, #returns-f-percent, #returns-j, #returns-j-percent {
+    color: green;
+  }
+
+  .table-light #returns-b, #returns-b-percent, #returns-d, #returns-d-percent, #returns-g, #returns-g-percent, 
+  #returns-h, #returns-h-percent, #returns-i, #returns-i-percent {
+    color: red;
+  }
+
+.heading2 h3{
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading3 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading3 h3 b {
+    color: green;
+}
+
+.heading4 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading4 h3 b {
+    color: red;
+}
+
+.heading5 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#hello {
+  color: white;
+}
+
+#welcome {
+  color: white;
+}
+
+#welcome-tag {
+  color: white;
+  text-align: center;
+}
+
+.card-text b {
+    color: green !important;
+}
+
+a.text-white {
+  text-decoration: none;
+}
+
+a.text-white:hover {
+  color: gold !important;
+}
