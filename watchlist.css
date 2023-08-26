@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+#welcome {
+    color: white;
+}
+  
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.col {
+    border-style: solid;
+    border-color: darkgray;
+}
+
+#nifty-50, #sensex, #bank-nifty, #heading-volume-1, #heading-volume-2, #heading-volume-3, #check-out-1,
+#positive-stock-1, #positive-stock-2, #positive-stock-3, #check-out-2, #negative-stock-1, #negative-stock-2, 
+#negative-stock-3, #check-out-3, #news-stock-1, #news-stock-2, #news-stock-3, #check-out-4 {
+    text-decoration: none;
+    color: white;
+  }
+
+  #nifty-50:hover, #sensex:hover, #bank-nifty:hover, #heading-volume-1:hover, #heading-volume-2:hover, 
+  #heading-volume-3:hover, #check-out-1:hover, #positive-stock-1:hover, #positive-stock-2:hover, 
+  #positive-stock-3:hover, #check-out-2:hover, #negative-stock-1:hover, #negative-stock-2:hover, 
+  #negative-stock-3:hover, #check-out-3:hover, #news-stock-1:hover, #news-stock-2:hover, #news-stock-3:hover,
+  #check-out-4:hover {
+    color: cyan;
+  }
+
+
+  #heading-1 {
+    color: white;
+    text-align: center;
+  }
+
+  body {
+    background-color: black;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#heading-1 {
+    color: white;
+    text-align: center;
+}
+
+.col {
+    border-style: solid;
+    border-color: darkgray;
+}
+
+.table-light {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+
+  td {
+    color: white;
+  }
+
+  tr {
+    background-color: black;
+  }
+
+  #stock-table tr:hover {
+    cursor: pointer;
+  }
+
+  #stock-table th {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: whitesmoke;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }
+
+  .buy-button {
+    background-color: green;
+    border-radius: 10px;
+    border-color: green;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 120px;
+  }
+
+  .sell-button {
+    background-color: red;
+    border-radius: 10px;
+    border-color: red;
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 120px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #about-stock {
+    text-decoration: none;
+  }

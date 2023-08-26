@@ -1,0 +1,217 @@
+.navbar {
+    margin: auto;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+/* Add padding to the container */
+.container1 {
+    padding: 50px;
+  }
+/* Remove box-shadow from the card */
+.card {
+    width: 70%;
+    height: 100%;
+    box-shadow: none;
+  }
+/* Add padding to the card body */
+.card-body {
+    padding: 2rem;
+  }
+/* Set the width and height of the image */
+img {
+    width: 70%;
+    height: auto;
+  }
+/* Center align the row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+/* Set the width, padding, and box-sizing of the columns */
+.col-md-6 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+/* Set the width and max-width of the image in the first column */
+.col-md-6:first-child img {
+    width: 100%;
+    max-width: 100%;
+  }
+/* Set the width, display, and align-items of the card column */
+.col-md-6:last-child {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.btn-success:hover {
+    background-color: #0069d9;
+  }
+
+li {
+    text-align: left;
+}
+
+section {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adds a margin of 2rem to the top and bottom of the element with class "title" and 0rem to the left and right */
+.title {
+  margin: 2rem 0rem;
+}
+
+/* Sets a maximum width of 700px for elements with class "faq" */
+/* Adds a margin of 2rem to the top of elements with class "faq" */
+/* Adds a padding of 1rem to the bottom of elements with class "faq" */
+/* Adds a solid black border to the bottom of elements with class "faq" */
+/* Sets the cursor to a pointer when hovering over elements with class "faq" */
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+/* Displays elements with class "question" as a flex container */
+/* Aligns items in the flex container to be evenly spaced */
+/* Vertically centers the items in the flex container */
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Sets the maximum height of elements with class "answer" to 0 */
+/* Hides any content that overflows from elements with class "answer" */
+/* Adds a transition effect of 1.4s with an ease timing function to the maximum height of elements with class "answer" */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+/* Adds a padding of 1rem to the top of any paragraphs inside elements with class "answer" */
+/* Sets the line-height of any paragraphs inside elements with class "answer" to 1.6 */
+.answer p{
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Sets the maximum height of elements with class "answer" to 300px when they are inside an element with class "faq" that also has class "active" */
+/* Adds a fade animation effect with a duration of 1s and an ease-in-out timing function to elements with class "answer" 
+that are inside an element with class "faq" that also has class "active" */
+.faq.active .answer{
+  max-height: 300px;;
+  animation: fade 1s ease-in-out;
+}
+
+/* Rotates any svg elements inside elements with class "faq" that also have class "active" by 180 degrees */
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+/* Adds a transition effect of 0.5s with an ease-in timing function to the transform property of any svg element */
+svg{
+  transition: transform 0.5s ease-in;
+}
+
+/* Sets the opacity of an element to 0 at the beginning of the animation */
+/* Moves an element 10px upwards at the beginning of the animation */
+/* Sets the opacity of an element to 1 at the end of the animation */
+/* Moves an element back to its original position at the end of the animation */
+@keyframes fade {
+  from{
+      opacity: 0;
+      transform: translateY(-10px);
+
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+/* This CSS rule applies to all elements with the "perk" class within an element with the "perks" class */
+.perks__perk {
+  /* Flexbox layout: align items vertically center */
+  display: flex;
+  align-items: center;
+  /* Background color */
+  background-color: whitesmoke;
+  /* Width of the element */
+  width: 70%;
+  /* Height of the element */
+  height: 120px;
+}
+
+/* This CSS rule applies to all elements with the "perks__icon" class within an element with the "perks__perk" class */
+.perks__icon {
+  /* Prevent icon from shrinking within flex container */
+  flex-shrink: 0;
+  /* Margin to create space between the icon and the text */
+  margin-right: 150px; /* Add margin between image and text */
+  /* Width of the icon */
+  width: 50px; /* adjust as needed */
+  /* Height of the icon */
+  height: 50px; /* adjust as needed */
+}
+
+/* This CSS rule applies to all SVG elements within an element with the "perks__icon" class */
+.perks__icon svg {
+  /* Enlarge the SVG element by 250% */
+  width: 250%;
+  height: 250%;
+  /* Position the SVG element to overlap the top left corner of the "perks__icon" element */
+  margin-left: 10px;
+  margin-top: -25px;
+}
+
+
+#award b {
+  color: green;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-container {
+  display: none;
+}
+
+#more-btn {
+  background-color: #0069d9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+

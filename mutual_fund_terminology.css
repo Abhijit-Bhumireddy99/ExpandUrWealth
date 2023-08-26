@@ -1,0 +1,92 @@
+.navbar {
+    margin: auto;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+/* Adds a margin of 2rem to the top and bottom of the element with class "title" and 0rem to the left and right */
+.title {
+    margin: 2rem 0rem;
+  }
+  
+  /* Sets a maximum width of 700px for elements with class "faq" */
+  /* Adds a margin of 2rem to the top of elements with class "faq" */
+  /* Adds a padding of 1rem to the bottom of elements with class "faq" */
+  /* Adds a solid black border to the bottom of elements with class "faq" */
+  /* Sets the cursor to a pointer when hovering over elements with class "faq" */
+  .faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Displays elements with class "question" as a flex container */
+  /* Aligns items in the flex container to be evenly spaced */
+  /* Vertically centers the items in the flex container */
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Sets the maximum height of elements with class "answer" to 0 */
+  /* Hides any content that overflows from elements with class "answer" */
+  /* Adds a transition effect of 1.4s with an ease timing function to the maximum height of elements with class "answer" */
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+  }
+  
+  /* Adds a padding of 1rem to the top of any paragraphs inside elements with class "answer" */
+  /* Sets the line-height of any paragraphs inside elements with class "answer" to 1.6 */
+  .answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Sets the maximum height of elements with class "answer" to 300px when they are inside an element with class "faq" that also has class "active" */
+  /* Adds a fade animation effect with a duration of 1s and an ease-in-out timing function to elements with class "answer" 
+  that are inside an element with class "faq" that also has class "active" */
+  .faq.active .answer{
+    max-height: 300px;;
+    animation: fade 1s ease-in-out;
+  }
+  
+  /* Rotates any svg elements inside elements with class "faq" that also have class "active" by 180 degrees */
+  .faq.active svg {
+    transform: rotate(180deg);
+  }
+  
+  /* Adds a transition effect of 0.5s with an ease-in timing function to the transform property of any svg element */
+  svg{
+    transition: transform 0.5s ease-in;
+  }
+  
+  /* Sets the opacity of an element to 0 at the beginning of the animation */
+  /* Moves an element 10px upwards at the beginning of the animation */
+  /* Sets the opacity of an element to 1 at the end of the animation */
+  /* Moves an element back to its original position at the end of the animation */
+  @keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+  
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }

@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+}
+
+.heading1 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading2 h3 {
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading3 h3 {
+  color: white;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.heading4 h3 {
+  color: white;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+    color: green !important; /* !important rule in CSS is used to add more importance to a property/value than normal. 
+                                  !important rule will override ALL previous styling rules for that specific property 
+                                  on that element! */
+}
+
+.navbar-brand i {
+    color: white !important;
+}
+
+.table-light {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: whitesmoke;
+    font-weight: bold;
+  }
+
+  td {
+    color: white;
+  }
+
+  tr {
+    background-color: black;
+  }
+
+  #stock-table tr:hover {
+    cursor: pointer;
+  }
+
+  #stock-table th {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table1 th {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table1 td {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #stock-table1 tr:hover {
+    cursor: pointer;
+  }
+
+  #pop1-1yr-return-1, #pop1-3yr-return-1, #pop1-5yr-return-1, #pop2-1yr-return-2, #pop2-3yr-return-2, #pop2-5yr-return-2,
+  #pop3-1yr-return-3, #pop3-3yr-return-3, #pop3-5yr-return-3, #pop4-3yr-return-4, #pop4-5yr-return-4, #all1-3yr-return-1,
+  #all1-5yr-return-1, #all2-1yr-return-2, #all2-3yr-return-2, #all2-5yr-return-2, #all3-1yr-return-3, #all3-3yr-return-3,
+  #all3-5yr-return-3, #all4-1yr-return-4, #all4-3yr-return-4, #all4-5yr-return-4, #all5-1yr-return-5, #all5-3yr-return-5,
+  #all5-5yr-return-6, #all6-1yr-return-6, #all6-3yr-return-6, #all6-5yr-return-6, #all7-1yr-return-7, #all7-3yr-return-7,
+  #all7-5yr-return-7, #all8-1yr-return-8, #all8-3yr-return-8, #all8-5yr-return-8, #all9-1yr-return-9, #all9-3yr-return-9,
+  #all9-5yr-return-9, #all10-3yr-return-10, #all10-5yr-return-10
+  {
+    color: green;
+  }
+
+  #pop4-1yr-return-4, #all1-1yr-return-1, #all10-1yr-return-10 {
+    color: red;
+  }
+
+.container {
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#understand-mf {
+    text-decoration: none;
+    text-align: center;
+}
+
+#welcome {
+    color: white;
+}
+  
+#welcome-tag {
+    color: white;
+    text-align: center;
+}
+ 
+#view-more-btn {
+  background-color: #0069d9; /* Sets the background color of the button */
+  color: white; /* Sets the text color of the button */
+  padding: 10px 20px; /* Sets the padding of the button */
+  border: none; /* Removes the border of the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  display: block; /* Makes the button a block-level element */
+  margin: 0 auto; /* Centers the button horizontally within its parent element */
+}

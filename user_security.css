@@ -1,0 +1,95 @@
+#welcome {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header h6, .header form {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.error-message {
+    margin-top: 10px;
+}
+  
+.form-container {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+.form-container div {
+    margin: 10px 0;
+  }
+  
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+button[type="button"]:hover {
+  background-color: #0069d9;
+}
+
+#logout {
+    color: green;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#logout:hover {
+    color:#0069d9;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
