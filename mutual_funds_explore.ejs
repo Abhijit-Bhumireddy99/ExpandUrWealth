@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 and CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mutual_funds_explore.css">
+    <title>Explore MF</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/domestic_stocks" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discover
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/domestic_stocks">Domestic Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">US Stocks</a></li>
+                    <li><a class="dropdown-item" href="/mutual_funds_explore">Mutual Funds</a></li>
+                    <li><a class="dropdown-item" href="/ipo">IPO</a></li>
+                    <li><a class="dropdown-item" href="#">Gold</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/mutual_fund_holdings">My Holdings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/watchlist_mutual_funds">Watch-List</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn&Invest
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/fundamental_analysis">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="stock_market_terminology">Stock Market Terminology</a></li>
+                  <li><a class="dropdown-item" href="/mutual_fund_terminology">Mutual Fund Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Market News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search about stocks here..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+<h3 id="welcome"><%= name %>, are you an investor with less risk tolerance</h3>
+<p id="welcome-tag">- <i>
+                         Mutual Funds can be a good option for you, explore the various mutual fund schemes in our website
+                      </i>
+</p>
+    
+    <!-- Why Mutual Funds? -->
+    <div class="heading1">
+        <h3>Why Mutual Funds?</h3>
+    </div>
+
+  <!-- Answer for Why Mutual Funds? -->
+  <div class="container">
+    <h5>
+        Mutual funds offer diversification, professional management, and liquidity compared to investing in individual 
+        stocks. They allow investors to gain exposure to a broad range of publicly traded companies with varying levels 
+        of risk, and provide a convenient way to invest in the stock market without having to pick individual stocks. 
+    </h5>
+    <a href="/mutual_fund_terminology" id="understand-mf"><h5>Understand Mutual Funds and Related Terminology</h5></a>
+  </div>
+
+  <!-- Point to Remember -->
+  <div class="heading2">
+    <h3>A point to remember.....</h3>
+  </div>
+
+  <!-- Answer for "point to remember" -->
+  <div class="container">
+    <h5>
+      Mutual fund prices update after 1 trading day because of the way mutual funds are structured and traded. 
+      Mutual funds are a type of investment product that collects money from various investors to purchase a diversified 
+      portfolio of securities like stocks, bonds, and other financial assets.
+    </h5>
+    <h5>
+      The price of a mutual fund is determined by the Net Asset Value (NAV) of the included securities in the fund. 
+      Because mutual funds are priced based on the value of the included securities, the price of the fund will 
+      change throughout the trading day as the values of those securities change. However, mutual funds are typically 
+      only priced once per day, at the end of the trading day, after the markets have closed and the values of the 
+      included securities have been finalized.
+    </h5>
+    <h5>
+      This is done to ensure that all investors are treated fairly and that everyone has access to the same pricing 
+      information. By pricing mutual funds at the end of the day, investors can make informed decisions based on the 
+      same information, regardless of when they placed their orders.
+    </h5>
+  </div>
+
+
+
+    <!-- Popular Funds Heading -->
+    <div class="heading3">
+        <h3>Popular Mutual Funds at the moment</h3>
+    </div>
+
+
+<!-- Table of popular funds at the moment -->
+<table class = table-light id="stock-table">
+    <thead>
+      <tr class="table-light">
+        <th>#</th>
+        <th>Mutual Fund</th>
+        <th>Asset Class</th>
+        <th>Risk / Volatility</th>
+        <th>Current NAV (₹)</th>
+        <th>Min. SIP Amount (₹)</th>
+        <th>Fund Size (Crores (₹))</th>
+        <th>1 Yr Returns (%)</th>
+        <th>3 Yr Returns (%)</th>
+        <th>5 Yr Returns (%)</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Quant Small Cap Fund</td>
+        <td>Equity</td>
+        <td>Very High</td>
+        <td>159.49</td>
+        <td>1000</td>
+        <td>3578</td>
+        <td id="pop1-1yr-return-1">+19.08</td>
+        <td id="pop1-3yr-return-1">+65.56</td>
+        <td id="pop1-5yr-return-1">+25.51</td>
+      </tr>
+    
+      <tr>
+        <td>2</td>
+        <td>ICICI Prudential Commodities Fund</td>
+        <td>Equity</td>
+        <td>High</td>
+        <td>29.20</td>
+        <td>100</td>
+        <td>884</td>
+        <td id="pop2-1yr-return-2">+9.69</td>
+        <td id="pop2-3yr-return-2">+56.08</td>
+        <td id="pop2-5yr-return-2">+35.20</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Parag Parikh Flexi Cap Fund</td>
+        <td>Equity</td>
+        <td>Very High</td>
+        <td>55.82</td>
+        <td>1000</td>
+        <td>31290</td>
+        <td id="pop3-1yr-return-3">+12.98</td>
+        <td id="pop3-3yr-return-3">+32.46</td>
+        <td id="pop3-5yr-return-3">+18.67</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Tata Digital India Fund</td>
+        <td>Equity</td>
+        <td>Very High</td>
+        <td>34.93</td>
+        <td>150</td>
+        <td>6781</td>
+        <td id="pop4-1yr-return-4">-5.65</td>
+        <td id="pop4-3yr-return-4">+35.68</td>
+        <td id="pop4-5yr-return-4">+19.58</td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- All Mutual Funds -->
+<div class="heading4">
+    <h3>All Mutual Funds</h3>
+</div>
+
+<!-- Table of all mutual funds -->
+<table class = table-light id="stock-table1">
+  <thead>
+    <tr class="table-light">
+      <th>#</th>
+      <th>Mutual Fund</th>
+      <th>Asset Class</th>
+      <th>Risk / Volatility</th>
+      <th>Current NAV (₹)</th>
+      <th>Min. SIP Amount (₹)</th>
+      <th>Fund Size (Crores (₹))</th>
+      <th>1 Yr Returns (%)</th>
+      <th>3 Yr Returns (%)</th>
+      <th>5 Yr Returns (%)</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ICICI Prudential Technology Fund</td>
+      <td>Equity</td>
+      <td>Very High</td>
+      <td>141.50</td>
+      <td>100</td>
+      <td>10093</td>
+      <td id="all1-1yr-return-1">-6.75</td>
+      <td id="all1-3yr-return-1">+39.56</td>
+      <td id="all1-5yr-return-1">+20.82</td>
+    </tr>
+  
+    <tr>
+      <td>2</td>
+      <td>Nippon India Small Cap Fund</td>
+      <td>Equity</td>
+      <td>Very High</td>
+      <td>107.29</td>
+      <td>100</td>
+      <td>24490</td>
+      <td id="all2-1yr-return-2">+17.27</td>
+      <td id="all2-3yr-return-2">+48.77</td>
+      <td id="all2-5yr-return-2">+17.34</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>Invesco India Arbitrage Fund</td>
+      <td>Hybrid</td>
+      <td>Low</td>
+      <td>29.16</td>
+      <td>500</td>
+      <td>2690</td>
+      <td id="all3-1yr-return-3">+6.61</td>
+      <td id="all3-3yr-return-3">+5.11</td>
+      <td id="all3-5yr-return-3">+5.69</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>HDFC Short Term Debt Fund</td>
+      <td>Debt</td>
+      <td>Moderate</td>
+      <td>27.80</td>
+      <td>100</td>
+      <td>11490</td>
+      <td id="all4-1yr-return-4">+6.80</td>
+      <td id="all4-3yr-return-4">+6.63</td>
+      <td id="all4-5yr-return-4">+7.50</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>Parag Parikh Tax Saver Fund</td>
+      <td>Equity (ELSS)</td>
+      <td>Moderately High</td>
+      <td>21.67</td>
+      <td>1000</td>
+      <td>1356</td>
+      <td id="all5-1yr-return-5">+15.15</td>
+      <td id="all4-3yr-return-4">+33.96</td>
+      <td id="all4-5yr-return-4">+22.69</td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>Axis Nifty 100 Index Fund</td>
+      <td>Equity</td>
+      <td>Moderately High</td>
+      <td>15.74</td>
+      <td>100</td>
+      <td>952</td>
+      <td id="all6-1yr-return-6">+7.51</td>
+      <td id="all6-3yr-return-6">+24.95</td>
+      <td id="all6-5yr-return-6">+13.65</td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>Mirae Asset Emerging Bluechip Fund</td>
+      <td>Equity</td>
+      <td>Very High</td>
+      <td>107.17</td>
+      <td>1000</td>
+      <td>23447</td>
+      <td id="all7-1yr-return-7">+7.37</td>
+      <td id="all7-3yr-return-7">+29.31</td>
+      <td id="all7-5yr-return-7">+15.29</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>LIC MF Ultra Short Term Fund</td>
+      <td>Debt</td>
+      <td>Moderately Low</td>
+      <td>1159.32</td>
+      <td>1000</td>
+      <td>28</td>
+      <td id="all8-1yr-return-8">+5.54</td>
+      <td id="all8-3yr-return-8">+4.34</td>
+      <td id="all8-5yr-return-8">+4.40</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>Quant Multi Asset Fund</td>
+      <td>Hybrid</td>
+      <td>High</td>
+      <td>92.87</td>
+      <td>1000</td>
+      <td>683</td>
+      <td id="all9-1yr-return-9">+13.64</td>
+      <td id="all9-3yr-return-9">+38.94</td>
+      <td id="all9-5yr-return-9">+21.88</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>Aditya Birla Sun Life Healthcare Fund</td>
+      <td>Equity</td>
+      <td>High</td>
+      <td>18.21</td>
+      <td>500</td>
+      <td>428</td>
+      <td id="all10-1yr-return-10">-0.71</td>
+      <td id="all6-3yr-return-6">+13.39</td>
+      <td id="all6-5yr-return-6">+16.99</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- View More Button -->
+<button id="view-more-btn">Explore More</button>
+
+
+    
+     <!-- adding bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+
+     <!-- adding external JS -->
+     <script src="./js/mutual_funds_explore.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 and CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mutual_fund_terminology.css">
+    <title>MF Terminology</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth <i>School</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/fundamental_analysis">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="/stock_market_terminology">Stock Market Terminology</a></li>
+                  <li><a class="dropdown-item" href="/mutual_fund_terminology">Mutual Fund Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instructors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Courses</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search courses..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Mutual Fund and related Terminology Explanation -->
+    <h3 class="title" id="learn-mutual-fund">Learn about Mutual Funds</h3>
+    <div class="faq">
+     <div class="question">
+         <h5>What is Mutual Fund?</h5>
+
+         <svg width="15" height="10" viewBox="0 0 42 25">
+         <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+         </svg>
+     </div>
+     <div class="answer">
+       <br>
+       <p>
+        A mutual fund is a type of investment product that pools money from multiple investors and invests it in a 
+        diversified portfolio of stocks, bonds, or other assets. Investors buy shares in the mutual fund, and the value 
+        of those shares rises and falls with the performance of the included assets. Mutual funds are managed by 
+        professional fund managers who make investment decisions on behalf of the investors.
+       </p>
+     </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is an Asset Class?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Asset class refers to a group of securities that exhibit similar characteristics and behave similarly in the 
+        market. The three main asset classes are equities (stocks), fixed income (bonds), and cash equivalents. 
+        Mutual funds are typically classified based on their asset class and investment objectives, and investors can 
+        choose funds that align with their risk tolerance and investment goals.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What is the meaning of holdings in mutual fund?</h5>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      Holdings refer to the securities or assets held by the mutual fund in its portfolio. These holdings can include 
+      stocks, bonds, and other types of investments.
+    </p>
+  </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is NAV?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Net Asset Value (NAV) is the total value of a mutual fund's assets minus its liabilities, divided by the total 
+        number of units currently held by shareholders. NAV represents the price per unit of the mutual fund.
+        <p>Current NAV is the NAV of the mutual fund at the end of the trading day.</p>
+        Average NAV is the average of the NAVs of a mutual fund over a specified period of time, such as the last 1 year, 
+        3 years, 5 years, or since inception.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Minimum SIP Amount?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Minimum SIP (Systematic Investment Plan) amount refers to the minimum investment amount required for an investor 
+        to participate in a SIP scheme offered by mutual funds. It is the minimum amount that an investor needs to invest 
+        at regular intervals in a mutual fund scheme through SIP. This amount can vary from one mutual fund to another and 
+        is typically determined by the fund house.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Fund Size?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        fund size refers to the total value of assets under management (AUM) of a particular mutual fund scheme. It 
+        represents the total amount of money that investors have invested in the fund. The fund size can impact the 
+        liquidity and performance of the mutual fund.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are 1 year returns?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        The 1-year returns in a mutual fund refers to the percentage increase or decrease in the fund's net asset value 
+        (NAV) over the past year. It is a measure of the fund's performance over the last 12 months.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are 3 year returns?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        The 3-year returns in a mutual fund is a measure of the percentage increase or decrease in the value of the 
+        mutual fund over the past 3 years. It indicates the average annual return generated by the mutual fund during 
+        this period, taking into account all gains and losses. This metric is often used by investors to assess the 
+        performance of a mutual fund over a longer period of time and to evaluate the consistency of returns.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are 5 year returns?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        The 5-year returns in a mutual fund refer to the total percentage increase or decrease in the value of an 
+        investment in a mutual fund over a period of five years. It is a measure of the fund's performance and helps 
+        investors to evaluate the fund's past track record. The higher the 5-year returns, the better the performance 
+        of the mutual fund over that time period.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What are Balance Units?</h5>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      Balance units represent the number of units held by an investor in a mutual fund scheme after all redeems (sells) 
+      or purchases. It is the remaining units in the investor's account, representing the current value of the investment 
+      in the scheme.
+    </p>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What is XIRR?</h5>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      XIRR stands for "Extended Internal Rate of Return". It is a financial metric used to calculate the returns of an 
+      investment over a period of time, taking into account the timing and amount of cash inflows and outflows. 
+      It takes into account the time value of money and provides a more accurate measure of the actual rate of return. 
+      In the context of mutual funds, XIRR is used to calculate the annualized return earned by an investor over the 
+      period of their investment.
+    </p>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What are One Time Invest & SIP Invest?</h5>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      One Time Invest and SIP (Systematic Investment Plan) Invest are two ways to invest in mutual funds.
+    </p>
+    One Time Invest refers to a lump sum investment where an investor invests a large sum of money in a mutual fund 
+    at one go.
+    <p>
+      SIP Invest refers to a mode of investing a fixed amount of money at regular intervals, such as weekly, monthly or 
+      quarterly, in a mutual fund. It helps investors inculcate a disciplined approach towards investing and benefit from 
+      the power of compounding.
+    </p>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What is weightage in mutual fund?</h5>
+
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      Weightage refers to the percentage assigned to each holding (out of 100) in a mutual fund's portfolio.
+    </p>
+  </div>
+</div>
+
+<br>
+<!-- fees and charges associated with investing in mutual funds -->
+<h3 class="title" id="learn-fees">Fees and Charges associated with investing in Mutual Funds.</h3>
+<div class="faq">
+ <div class="question">
+     <h5>What is an Expense Ratio?</h5>
+
+     <svg width="15" height="10" viewBox="0 0 42 25">
+     <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+     </svg>
+ </div>
+ <div class="answer">
+   <br>
+   <p>
+    The fees charged by the mutual fund company to manage the fund, and is charged annually.
+   </p>
+ </div>
+</div>
+
+<div class="faq">
+  <div class="question">
+      <h5>What is Exit Load?</h5>
+ 
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      The fee charged by mutual funds when investors redeem or sell their units before a specified time period. It is 
+      meant to discourage short-term investments and promote long-term investment objectives of the fund. The exit load 
+      percentage and the holding period vary for different mutual fund schemes.
+    </p>
+  </div>
+ </div>
+
+ <div class="faq">
+  <div class="question">
+      <h5>What is Stamp Duty?</h5>
+ 
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      It is a tax imposed by the government on the purchase of mutual fund units. It is usually a small percentage of the 
+      investment amount and varies from state to state in India.
+    </p>
+  </div>
+ </div>
+
+ <div class="faq">
+  <div class="question">
+      <h5>What is Tax?</h5>
+ 
+      <svg width="15" height="10" viewBox="0 0 42 25">
+      <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  </div>
+  <div class="answer">
+    <br>
+    <p>
+      Tax refers to the amount of money paid on the gains or profits earned from investments. There are 2 types of 
+      capital gains tax applicable in mutual funds: Long-Term Capital Gains (LTCG) Tax and Short-Term Capital Gains 
+      (STCG) Tax.
+    </p>
+    LTCG Tax is the tax payable on the profits earned on the sale of mutual fund units held for more than 1 year.
+    <p>
+      STCG Tax is the tax payable on the profits earned on the sale of mutual fund units held for less than or equal to 
+      1 year.
+    </p>
+  </div>
+ </div>
+
+
+
+<br>
+<br>
+
+    <!-- adding bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+
+    <!-- adding external JS -->
+    <script src="./js/mutual_fund_terminology.js"></script>
+</body>
+</html>

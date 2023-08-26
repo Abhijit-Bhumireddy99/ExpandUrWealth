@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport - the area of a web page that's visible to the user -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 CSS and External CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mutual_fund_details.css">
+    <title>Mutual Fund Details</title>
+</head>
+<body>
+
+    <!-- Included Holdings heading -->
+    <div class="container">
+        <h4 id="heading-1">Included Holdings</h4>
+    </div>
+
+    <!-- Included Holdings or Companies in the mutual fund table -->
+<table class = table-light id="stock-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Security Name</th>
+        <th>Industry / Sector</th>
+        <th>Weightage (%)</th>
+        <th>Market Cap (in Crores (₹))</th>
+        <th>Current Market Price (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="stock-row" data-stock="HOUSING DEVELOPMENT FINANCE CORPORATION">
+        <td>1</td>
+        <td>HDFC</td>
+        <td>Financial Services</td>
+        <td>8.07</td>
+        <td id="market-cap-1"></td>
+        <td id="price-1"></td>
+      </tr>
+      <tr class="stock-row" data-stock="ITC">
+        <td>2</td>
+        <td>ITC</td>
+        <td>Multi Industry / Sector</td>
+        <td>7.44</td>
+        <td id="market-cap-2"></td>
+        <td id="price-2"></td>
+      </tr>
+      <tr class="stock-row" data-stock="BAJAJ HOLDINGS & INVESTMENT">
+        <td>3</td>
+        <td>Bajaj Holdings & Investment</td>
+        <td>Financial Services</td>
+        <td>6.83</td>
+        <td id="market-cap-3"></td>
+        <td id="price-3"></td>
+      </tr>
+      <tr class="stock-row" data-stock="ICICI Bank">
+        <td>4</td>
+        <td>ICICI Bank</td>
+        <td>Banking (Private)</td>
+        <td>6.09</td>
+        <td id="market-cap-4"></td>
+        <td id="price-4"></td>
+      </tr>
+      <tr class="stock-row" data-stock="AXIS BANK">
+        <td>5</td>
+        <td>Axis Bank</td>
+        <td>Banking (Private)</td>
+        <td>5.36</td>
+        <td id="market-cap-5"></td>
+        <td id="price-5"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Microsoft Corporation (USA)</td>
+        <td>Technology</td>
+        <td>5.34</td>
+        <td id="market-cap-6">---</td>
+        <td id="price-6">---</td>
+      </tr>
+      <tr class="stock-row" data-stock="HCL TECHNOLOGIES">
+        <td>7</td>
+        <td>HCL Technologies</td>
+        <td>Information Tech.</td>
+        <td>5.15</td>
+        <td id="market-cap-7"></td>
+        <td id="price-7"></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Alphabet Inc. Class A (USA)</td>
+        <td>Technology & Communication</td>
+        <td>4.78</td>
+        <td id="market-cap-8">---</td>
+        <td id="price-8">---</td>
+      </tr>
+      <tr class="stock-row" data-stock="COAL INDIA">
+        <td>9</td>
+        <td>Coal India</td>
+        <td>Fuel, Gas, Oil</td>
+        <td>4.67</td>
+        <td id="market-cap-9"></td>
+        <td id="price-9"></td>
+      </tr>
+      <tr class="stock-row" data-stock="POWER GRID CORPORATION OF INDIA">
+        <td>10</td>
+        <td>Power Grid Corporation of India</td>
+        <td>Power, Energy</td>
+        <td>4.60</td>
+        <td id="market-cap-10"></td>
+        <td id="price-10"></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Amazon (USA)</td>
+        <td>Technology</td>
+        <td>3.44</td>
+        <td id="market-cap-11">---</td>
+        <td id="price-11">---</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Facebook / Meta (USA)</td>
+        <td>Technology & Communication</td>
+        <td>3.23</td>
+        <td id="market-cap-12">---</td>
+        <td id="price-12">---</td>
+      </tr>
+      <tr class="stock-row" data-stock="HERO MOTOCORP">
+        <td>13</td>
+        <td>Hero Motocorp</td>
+        <td>Automobile</td>
+        <td>3.14</td>
+        <td id="market-cap-13"></td>
+        <td id="price-13"></td>
+      </tr>
+      <tr class="stock-row" data-stock="INDIAN ENERGY EXCHANGE">
+        <td>14</td>
+        <td>IEX</td>
+        <td>Power, Energy</td>
+        <td>1.81</td>
+        <td id="market-cap-14"></td>
+        <td id="price-14"></td>
+      </tr>
+      <tr class="stock-row" data-stock="MOTILAL OSWAL FINANCIAL SERVICES">
+        <td>15</td>
+        <td>Motilal Oswal Financial Services</td>
+        <td>Financial Services</td>
+        <td>1.49</td>
+        <td id="market-cap-15"></td>
+        <td id="price-15"></td>
+      </tr>
+      <tr class="stock-row" data-stock="Central Despository Services (India) Limited">
+        <td>16</td>
+        <td>CDSL</td>
+        <td>Financial Services</td>
+        <td>1.39</td>
+        <td id="market-cap-16"></td>
+        <td id="price-16"></td>
+      </tr>
+      <tr class="stock-row" data-stock="Multi Commodity Exchange of India">
+        <td>17</td>
+        <td>MCX</td>
+        <td>Financial Services</td>
+        <td>1.21</td>
+        <td id="market-cap-17"></td>
+        <td id="price-17"></td>
+      </tr>
+      <tr class="stock-row" data-stock="ZYDUS LIFESCIENCES">
+        <td>18</td>
+        <td>Zydus Lifesciences</td>
+        <td>Pharamaceuticals</td>
+        <td>1.13</td>
+        <td id="market-cap-18"></td>
+        <td id="price-18"></td>
+      </tr>
+      <tr class="stock-row" data-stock="SUN PHARMACEUTICAL INDUSTRIES">
+        <td>19</td>
+        <td>Sun Pharmaceutical Industries</td>
+        <td>Pharamaceuticals</td>
+        <td>0.99</td>
+        <td id="market-cap-19"></td>
+        <td id="price-19"></td>
+      </tr>
+      <tr class="stock-row" data-stock="DR. REDDY'S LABORATORIES">
+        <td>20</td>
+        <td>Dr. Reddy's Laboratories</td>
+        <td>Pharamaceuticals</td>
+        <td>0.98</td>
+        <td id="market-cap-20"></td>
+        <td id="price-20"></td>
+      </tr>
+      <tr class="stock-row" data-stock="NMDC">
+        <td>21</td>
+        <td>NMDC</td>
+        <td>Metals & Mining</td>
+        <td>0.97</td>
+        <td id="market-cap-21"></td>
+        <td id="price-21"></td>
+      </tr>
+      <tr class="stock-row" data-stock="RELIANCE INDUSTRIES">
+        <td>22</td>
+        <td>Reliance Industries</td>
+        <td>Fuel, Gas, Oil</td>
+        <td>0.95</td>
+        <td id="market-cap-22"></td>
+        <td id="price-22"></td>
+      </tr>
+      <tr class="stock-row" data-stock="BAJAJ FINANCE">
+        <td>23</td>
+        <td>Bajaj Finance</td>
+        <td>Financial Services (NBFC)</td>
+        <td>0.83</td>
+        <td id="market-cap-23"></td>
+        <td id="price-23"></td>
+      </tr>
+      <tr class="stock-row" data-stock="IPCA LABORATORIES">
+        <td>24</td>
+        <td>IPCA Laboratories</td>
+        <td>Pharamaceuticals</td>
+        <td>0.79</td>
+        <td id="market-cap-24"></td>
+        <td id="price-24"></td>
+      </tr>
+      <tr class="stock-row" data-stock="BALKRISHNA INDUSTRIES">
+        <td>25</td>
+        <td>Balkrishna Industries</td>
+        <td>Manufacturing</td>
+        <td>0.77</td>
+        <td id="market-cap-25"></td>
+        <td id="price-25"></td>
+      </tr>
+      <tr class="stock-row" data-stock="INFOSYS">
+        <td>26</td>
+        <td>Infosys</td>
+        <td>Information Tech.</td>
+        <td>0.73</td>
+        <td id="market-cap-26"></td>
+        <td id="price-26"></td>
+      </tr>
+      <tr class="stock-row" data-stock="CIPLA">
+        <td>27</td>
+        <td>Cipla</td>
+        <td>Pharamaceuticals</td>
+        <td>0.72</td>
+        <td id="market-cap-27"></td>
+        <td id="price-27"></td>
+      </tr>
+      <tr class="stock-row" data-stock="UTI ASSET MANAGEMENT COMPANY">
+        <td>28</td>
+        <td>UTI Asset Management Company</td>
+        <td>Financial Services</td>
+        <td>0.61</td>
+        <td id="market-cap-28"></td>
+        <td id="price-28"></td>
+      </tr>
+      <tr class="stock-row" data-stock="ICRA">
+        <td>29</td>
+        <td>ICRA</td>
+        <td>Financial Services</td>
+        <td>0.60</td>
+        <td id="market-cap-29"></td>
+        <td id="price-29"></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Suzuki Motor Corporation (Japan)</td>
+        <td>Automobile</td>
+        <td>0.54</td>
+        <td id="market-cap-30">---</td>
+        <td id="price-30">---</td>
+      </tr>
+      <tr class="stock-row" data-stock="KOTAK MAHINDRA BANK">
+        <td>31</td>
+        <td>Kotak Mahindra Bank</td>
+        <td>Banking (Private)</td>
+        <td>0.50</td>
+        <td id="market-cap-31"></td>
+        <td id="price-31"></td>
+      </tr>
+      <tr class="stock-row" data-stock="ORACLE FINANCIAL SERVICES SOFTWARE">
+        <td>32</td>
+        <td>Oracle Financial Services Software</td>
+        <td>Information Tech.</td>
+        <td>0.44</td>
+        <td id="market-cap-32"></td>
+        <td id="price-32"></td>
+      </tr>
+      <tr class="stock-row" data-stock="MARUTHI SUZUKI INDIA">
+        <td>33</td>
+        <td>Maruthi Suzuki India</td>
+        <td>Automobile</td>
+        <td>0.36</td>
+        <td id="market-cap-33"></td>
+        <td id="price-33"></td>
+      </tr>
+      <tr class="stock-row" data-stock="NMDC STEEL">
+        <td>34</td>
+        <td>NMDC Steel</td>
+        <td>Metals & Mining</td>
+        <td>0.27</td>
+        <td id="market-cap-34"></td>
+        <td id="price-34"></td>
+      </tr>
+      <tr class="stock-row" data-stock="SBI BANK">
+        <td>35</td>
+        <td>SBI Bank</td>
+        <td>Banking (Public)</td>
+        <td>0.16</td>
+        <td id="market-cap-35"></td>
+        <td id="price-35"></td>
+      </tr>
+      <tr class="stock-row" data-stock="INDUSIND BANK">
+        <td>36</td>
+        <td>IndusInd Bank</td>
+        <td>Banking (Private)</td>
+        <td>0.15</td>
+        <td id="market-cap-36"></td>
+        <td id="price-36"></td>
+      </tr>
+      <tr class="stock-row" data-stock="TECH MAHINDRA">
+        <td>37</td>
+        <td>Tech Mahindra</td>
+        <td>Information Tech.</td>
+        <td>0.12</td>
+        <td id="market-cap-37"></td>
+        <td id="price-37"></td>
+      </tr>
+      <tr class="stock-row" data-stock="HINDUSTAN UNILEVER LTD.">
+        <td>38</td>
+        <td>HUL</td>
+        <td>FMCG</td>
+        <td>0.11</td>
+        <td id="market-cap-38"></td>
+        <td id="price-38"></td>
+      </tr>
+      <tr class="stock-row" data-stock="MAHARASHTRA SCOOTERS">
+        <td>39</td>
+        <td>Maharashtra Scooters</td>
+        <td>Automobile</td>
+        <td>0.11</td>
+        <td id="market-cap-39"></td>
+        <td id="price-39"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Buy / Sell pop up -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href="/company-details-and-fundamentals" id="about-stock"><h5 class="stock-name"></h5></a>
+    <div class="quantity-field">
+      <label for="quantity"><h6><b>Quantity:</b></h6></label>
+      <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+    </div>
+    <br>
+    <div class="buy-sell-options">
+      <button class="buy-button">Buy</button>
+      <button class="sell-button">Sell</button>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Understand the terms in heading2 -->
+ <div class="heading2">
+  <h3>Expense Ratio, Exit Load, Stamp Duty, and Tax</h3>
+</div>
+
+<!-- Answers for the terms in heading 2 -->
+<div class="container" id="terms">
+  <ul id="text-1">
+    <li>
+      <h5>Expense Ratio</h5>
+      <p>0.73%, inclusive of GST (Goods and Services Tax)</p>
+    </li>
+    <li>
+      <h5>Exit Load</h5>
+      <p>
+         An exit load of 2% applies to units redeemed or sold within 1 year from the date of purchase. 
+         <br>
+         An exit load of 1% applies to units redeemed or sold after 1 year.
+      </p>
+    </li>
+    <li>
+      <h5>Stamp Duty on Investment</h5>
+      <p>0.005%</p>
+    </li>
+    <li>
+      <h5>Tax</h5>
+      <p>
+        You are required to pay STCG (Short Term Capital Gain) tax of 15% on returns, if redeem within 1 year.
+        <br>
+        You are required to pay LTCG (Long Term Capital Gain) tax of 10% on returns, if redeem after 1 year.
+      </p>
+    </li>
+  </ul>
+<a href="/mutual_fund_terminology#learn-fees" id="understand-mf-terms"><h5>Understand these terms</h5></a>
+</div>
+
+<!-- Fund Mangers -->
+<div class="heading3">
+  <h3>Mutual Fund Management</h3>
+</div>
+
+<!-- Fund managers and details -->
+<div class="container" id="terms">
+  <ul id="text-1">
+    <li>
+      <h5>Radhakishan Damani (From May 2013 to Current Date)</h5>
+      <p>
+        <b>Education:</b> Mr. Radhakishan Damani is a Chartered Accountant, Cost Accountant, CFA, and CFP.
+        <br>
+        <b>Experience:</b> He has been associated with Parag Parikh Financial Advisory Services AMC since 2013.
+      </p>
+    </li>
+    <li>
+      <h5>Ramesh Damani (From May 2013 to Current Date)</h5>
+      <p>
+         <b>Education:</b> Mr. Ramesh Damani is an MBA - Finance from University of Mumbai.
+         <br>
+         <b>Experience:</b> He joined Parag Parikh Financial Advisory Services AMC as a research analyst. He was 
+         appointed as head-research in the year 2019. He is working with the company as an Associate Fund Manager.  
+      </p>
+    </li>
+    <li>
+      <h5>Vijay Kedia (From January 2016 to Current Date)</h5>
+      <p>
+         <b>Education:</b> Mr. Vijay Kedia is a commerce graduate from University of Mumbai, member of ICAI 
+         (Institute of Chartered Accountants of India), and CFA Charter Holder.
+         <b>Experience:</b> Beginning his career as an intern with Parag Parikh Financial Advisory Services AMC
+         in 2012, he quickly moved up the ranks, and is currently part of the Mutual Fund Management team.
+      </p>
+    </li>
+    <li>
+      <h5>Porinju Veliyath (From May 2022 to Current Date)</h5>
+      <p>
+         <b>Education:</b> Mr. Porinju Veliyath has done B.Tech. - Computer Science, MBA - Finance, and CFA.
+         <br>
+         <b>Experience:</b> Prior to joining Parag Parikh Financial Advisory Services Mutual Fund, he has worked with
+         Kotak Mutual Fund, Goldman Sachs, Unnati Investment Management & Research Group.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+    <!-- adding bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- adding external JS -->
+    <script src="./js/mutual_fund_details.js"></script>
+</body>
+</html>
