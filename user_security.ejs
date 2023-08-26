@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport - the area of a web page that's visible to the user -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 CSS and External CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/user_security.css">
+    <title>User Security</title>
+</head>
+<body>
+ 
+    <!-- Hello Text -->
+    <h3 id="welcome">Hello, <%= name %>. Your account security is our top priority</h3>
+
+    <div class="header">
+        <!-- email -->
+        <h6 id="email"><br><%= email %></h6>
+
+        <!-- logout button -->
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" class="dropdown-item" id="logout">Logout</button>
+        </form>
+    </div>
+
+    <br>
+
+    <!-- 6-digit security pin input field, cancel button, verify button -->
+    <div class="form-container">
+        <form action="/domestic_stocks" onsubmit="return validateForm()">
+            <label for="security-pin">Enter your 6-digit security pin:</label>
+            <input type="password" id="security-pin" name="security-pin" placeholder="verify your 6-digit security pin" min="000000" max="999999" required>
+            <span id="error-message" class="error-message" style="display:none"></span>
+            <div class="button-container">
+                <br>
+                <button type="button" onclick="clearFields()">Cancel</button>
+                <button type="submit">Verify</button>
+            </div>
+        </form>
+    </div>
+
+      <!-- adding bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- adding external JS -->
+      <script src="./js/user_security.js"></script>
+
+</body>
+</html>

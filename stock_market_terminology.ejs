@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport - the area of a web page that's visible to the user -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 CSS and External CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/stock_market_terminology.css">
+    <title>ExpandUrWealth_Home_Page</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth <i>School</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/fundamental_analysis">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="/stock_market_terminology">Stock Market Terminology</a></li>
+                  <li><a class="dropdown-item" href="/mutual_fund_terminology">Mutual Fund Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instructors</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Courses</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search courses..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Stock Market Terminology Explanation -->
+    <!-- Understand Fundamentals Terminology-->
+           <h3 class="title" id="learn-fundamentals">Learn Fundamentals</h3>
+           <div class="faq">
+            <div class="question">
+                <h5>Shares, Stock, and Stock Market</h5>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+              <br>
+              <p>Share represents a unit of ownership in a company.</p>
+              Stock represents collection of shares
+              <p>The stock market is a marketplace where stocks are bought and sold.</p>
+              When a company wants to raise money, they can issue stocks to investors in exchange for capital.
+              Investors buy stocks with the hope that the company's value will increase, allowing them to sell their 
+              shares at a profit.
+              Stock prices can be influenced by many factors, including company performance, industry trends, economic 
+              conditions, and investor sentiment.
+            </div>
+       </div>
+
+           <div class="faq">
+               <div class="question">
+                   <h5>What is Market Capitalization?</h5>
+
+                   <svg width="15" height="10" viewBox="0 0 42 25">
+                   <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                   </svg>
+               </div>
+               <div class="answer">
+                 <br>
+                 <p>Market capitalization (often abbreviated as "market cap") is a measure of the total value of a 
+                    publicly traded company's shares currently held by investors. </p>
+                    Market Cap = Current Market Price of 1 share of a stock x total number of shares currently held
+                                 by investors
+                
+               </div>
+          </div>
+
+          <div class="faq">
+              <div class="question">
+                 <h5>What is P/E Ratio & Industry P/E Ratio?</h5>
+  
+                 <svg width="15" height="10" viewBox="0 0 42 25">
+                 <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                 </svg>
+              </div>
+              <div class="answer">
+                 <br>
+                 <p>
+                    The P/E ratio, or Price-to-Earnings ratio, is a financial metric that compares a company's stock 
+                    price to its earnings per share (EPS).
+                 </p>
+                 P/E Ratio = Current Market Price per Share / Earnings per Share (EPS)
+                 <p>Industry P/E ratio refers to the average P/E ratio of all the companies in a particular industry.</p>
+               </div>
+           </div>
+
+           <div class="faq">
+               <div class="question">
+                   <h5>What is Dividend Yield?</h5>
+      
+                   <svg width="15" height="10" viewBox="0 0 42 25">
+                   <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                   </svg>
+               </div>
+               <div class="answer">
+                   <br>
+                   <p>
+                      Dividend yield is a financial ratio that measures the amount of dividends paid by a company relative 
+                      to its stock price.
+                   </p>
+                   Dividend Yield = Annual Dividends per Share / Current Market Price per Share
+               </div>
+           </div>
+
+           <div class="faq">
+               <div class="question">
+                   <h5>What is ROCE?</h5>
+          
+                   <svg width="15" height="10" viewBox="0 0 42 25">
+                   <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                   </svg>
+               </div>
+               <div class="answer">
+                   <br>
+                   <p>
+                    ROCE stands for Return on Capital Employed and is a financial ratio that measures a company's 
+                    profitability and efficiency in using its capital to generate earnings.
+                   </p>
+                   ROCE = Earnings Before Interest and Taxes (EBIT) / Total Capital Employed
+                   <p>
+                    Total Capital Employed = all the capital invested in the company, including both equity and debt.
+                   </p> 
+               </div>
+           </div>
+
+           <div class="faq">
+             <div class="question">
+                 <h5>What is ROE?</h5>
+        
+                 <svg width="15" height="10" viewBox="0 0 42 25">
+                 <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+                 </svg>
+             </div>
+             <div class="answer">
+                 <br>
+                 <p>
+                    ROE stands for Return on Equity and is a financial ratio that measures the profitability of a 
+                    company's equity investment.
+                 </p>
+                 ROE = Net Income / Shareholder's Equity  
+             </div>
+          </div>
+
+          <div class="faq">
+           <div class="question">
+               <h5>What is Book Value?</h5>
+      
+               <svg width="15" height="10" viewBox="0 0 42 25">
+               <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+               </svg>
+           </div>
+           <div class="answer">
+               <br>
+               <p>
+                Book value is a financial metric that represents the total value of a company's assets that shareholders 
+                would receive if the company were to be liquidated and all its liabilities were paid off.
+               </p>   
+               Book Value = (Total Assets - Total Liabilities) / Number of Outstanding Shares  
+           </div>
+        </div>
+
+        <div class="faq">
+         <div class="question">
+             <h5>What is P/B Ratio?</h5>
+    
+             <svg width="15" height="10" viewBox="0 0 42 25">
+             <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+             </svg>
+         </div>
+         <div class="answer">
+             <br>
+             <p>
+                P/B ratio, or Price-to-Book ratio, is a financial ratio that compares a company's market value to its 
+                book value. 
+             </p> 
+             P/B Ratio = Current Market Price per Share / Book Value per Share
+         </div>
+      </div>
+
+      <div class="faq">
+       <div class="question">
+           <h5>What is Face Value?</h5>
+  
+           <svg width="15" height="10" viewBox="0 0 42 25">
+           <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+           </svg>
+       </div>
+       <div class="answer">
+           <br>
+           <p>Face value is the nominal or predetermined value of a financial instrument, such as a stock or a bond, that 
+            is determined by its issuer or promoter or founder. It represents the initial value of the instrument when it is 
+            first issued and does not change over time, even if the market price of the instrument fluctuates.</p>
+       </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h5>What is D/E Ratio?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                D/E ratio, or Debt-to-Equity ratio, is a financial ratio that measures a company's leverage, or the 
+                amount of debt a company has relative to its equity. 
+            </p>
+            D/E Ratio = Total Liabilities / Total Shareholder's Equity
+        </div>
+     </div>
+
+     <div class="faq">
+        <div class="question">
+            <h5>What is EPS?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                EPS, or earnings per share, is a financial metric that measures a company's profitability 
+            </p>
+            EPS = Net Income / Number of shares currently held by investors
+        </div>
+     </div>
+
+     <div class="faq">
+        <div class="question">
+            <h5>What is Pledged Percentage?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                Pledged percentage is a financial metric that measures the proportion of shares pledged by promoters or 
+                major shareholders of a company as collateral against loans or other obligations.
+            </p>
+            Pledged Percentage = (Total pledged shares / Total shares currently held by shareholders) x 100
+        </div>
+     </div>
+
+     <div class="faq">
+        <div class="question">
+            <h5>What is Revenue Growth?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                Revenue growth is a financial metric that measures the percentage increase in a company's total revenue 
+                over a period of time.
+            </p>
+        </div>
+     </div>
+
+     <div class="faq">
+        <div class="question">
+            <h5>What is Profit Growth?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                Profit growth is a financial metric that measures the percentage increase in a company's net profit 
+                (or earnings) over a period of time.
+            </p>
+        </div>
+     </div>
+
+     <div class="faq">
+        <div class="question">
+            <h5>What is ROI?</h5>
+   
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <br>
+            <p>
+                ROI stands for Return on Investment and is a financial metric that measures the profitability of an 
+                investment in relation to its cost.
+            </p>
+            ROI = (Gain from Investment - Cost of Investment) / Cost of Investment x 100
+        </div>
+     </div>
+
+     <br>
+
+     <!-- Understand Quarterly Results and Profit & Loss Financial Statements Terminology-->
+     <h3 class="title" id="learn-statements">
+        Learn Quarterly Results and Profit & Loss Financial Statements Terminology
+     </h3>
+     <div class="faq">
+        <div class="question">
+            <h5>What is the meaning of the Quarterly Results Financial Statement?</h5>
+
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+          <br>
+          <p>
+            The quarterly results financial statement is a set of financial data that a company releases every three 
+            months, typically after the end of a quarter.
+          </p>
+          This statement show important financial metrics, such as revenue, expenses, profits, profit margins, other 
+          income, interest, depreciation, etc, , which are used to assess the financial health and growth potential of 
+          the company.
+        </div>
+   </div>
+
+   <div class="faq">
+    <div class="question">
+        <h5>What is the meaning of the Profit & Loss Statement?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        A profit and loss (P&L) statement is a financial report that summarizes a company's revenues, expenses, profits, 
+        and other metrics over a specified period, typically a year. 
+      </p>
+      This statement provides an overview of the company's financial performance and shows whether the company made a 
+      profit or incurred a loss during the period. It is an essential tool for assessing a company's profitability and 
+      financial health.
+    </div>
+</div>
+
+     <div class="faq">
+         <div class="question">
+             <h5>What is Fiscal Quarter & Fiscal Year?</h5>
+
+             <svg width="15" height="10" viewBox="0 0 42 25">
+             <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+             </svg>
+         </div>
+         <div class="answer">
+           <br>
+           <p>
+            The Fiscal Year in India begins on April 1 and ends on March 31 of the following year, and it is divided into 
+            four quarters (Fiscal Quarters): April to June (Q1), July to September (Q2), October to December (Q3), 
+            January to March (Q4)
+           </p>
+         </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h5>What is Revenue?</h5>
+
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+          <br>
+          <p>
+            Revenue is the total income generated by a company from its primary business operations, such as sales of 
+            products or services. 
+          </p>
+          Revenue = Price of Products or Services x Quantity Sold
+        </div>
+   </div>
+
+   <div class="faq">
+    <div class="question">
+        <h5>What are Expenses?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Expenses are the costs incurred by a company in order to generate revenue from its primary business operations. 
+      </p>
+      Expenses = Cost of Products or Services Sold + Operating Expenses
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Operating Profit?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Operating profit, also known as earnings before interest and taxes (EBIT), is the profit generated by a company 
+        from its primary business operations after deducting its operating expenses.  
+      </p>
+      Operating Profit = Revenue - Cost of Products or Services Sold - Operating Expenses
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is OPM?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Operating profit margin (OPM) is a profitability ratio that measures the percentage of revenue that remains as 
+        operating profit after deducting operating expenses.  
+      </p>
+      Operating Profit Margin = (Operating Profit / Revenue) x 100
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Other Income?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Other income refers to the income that a company earns from sources other than its primary business operations. 
+        This can include interest income, rental income, gains from the sale of assets, and other miscellaneous income.  
+      </p>
+      Other Income = Total Income - Revenue
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Interest?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Interest in a company's financial statements refers to the amount of interest expense incurred by the company 
+        during a specific period. Interest expense is the cost of borrowing money, such as interest paid on loans or 
+        bonds.  
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Depreciation?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Depreciation is a method used in accounting to spread out the cost of a fixed asset over its useful life. It is 
+        an important aspect of financial statements because it reflects the decline in value of the asset over time, 
+        which can have an impact on a company's profitability and asset values. In simpler terms, depreciation is a way 
+        to account for the wear and tear of an asset and the decrease in its value as it is used over time.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is PBT?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        PBT stands for Profit Before Tax, and it is a financial metric that measures a company's earnings before taxes 
+        are deducted.
+      </p>
+      PBT = (Operating Profit + Other Income) - (Interest + Depreciation + Other Expenses)
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Tax?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Taxes represent the amount of money a company owes to the government as a result of its taxable income. It is an 
+        expense that is deducted from the company's profits.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Net Profit (PAT)?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Net Profit, also known as Profit After Tax (PAT), is the amount of money a company earns after all expenses, 
+        including taxes, have been deducted from its revenue.
+      </p>
+      Net Profit (PAT) = Total Revenue - Total Expenses - Taxes
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Dividend Payout?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Dividend Payout is the portion of a company's earnings that is distributed to its shareholders in the form of 
+        dividends.
+      </p>
+      Dividend Payout Ratio = Dividends Paid / Net Income
+      <p>
+        Dividend Payout % = Dividend Payout Ratio * 100
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Compounded Revenue Growth?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Compounded Revenue Growth is the rate at which a company's revenue increases over a specific period of time, 
+        taking into account the effect of compounding.
+      </p>
+      Compounded Revenue Growth = ((Revenue at end of period / Revenue at beginning of period)^(1/Number of years)) - 1
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Compounded Net Profit Growth?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Compounded Net Profit Growth is the rate at which a company's net profit increases over a specific period of 
+        time, taking into account the effect of compounding.
+      </p>
+      Compounded Net Profit Growth = ((Net Profit at end of period / Net Profit at beginning of period)^(1/Number of years)) - 1
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Compounding?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        compounding means “ returns an investor earns on his original investment + all the returns earned on the returns 
+        an investor received previously ”
+        It is easier to think of compounding as:
+      </p>
+      Compounding = returns on (original investment amount + previous returns)
+    </div>
+</div>
+
+ <!-- Understand Balance Sheet-->
+ <h3 class="title" id="learn-balance-sheet">
+    Learn Balance Sheet
+ </h3>
+ <div class="faq">
+    <div class="question">
+        <h5>What is Balance Sheet?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        A balance sheet is a financial statement that provides a snapshot of a company's financial position at a given 
+        point in time. It shows the company's assets, liabilities, and equity, providing a picture of what the company 
+        owns, owes, and the amount invested by shareholders. The balance sheet equation states that a company's assets 
+        must always equal the sum of its liabilities and equity. 
+      </p>
+      The balance sheet is based on the fundamental accounting equation: 
+      <b>Assets = Equity + Liabilities</b>
+      <p>The balance sheet is an important tool for evaluating a company's financial health</p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is an Equity?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        The amount that belongs to the shareholders.
+      </p>
+      Equity = Total Assets - Total Liabilities
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is an Asset?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        An asset is something a company owns. An asset is something that contains economic value and / or future benefit.
+      </p>
+      Assets = Total Equity + Total Liabilities
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is a Liability?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        A liability is something a company owes, usually a sum of money. 
+      </p>
+      Liabilities = Total Assets - Total Equity
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Share Capital?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Share capital refers to the funds raised by a company through the issuance of shares to the public or private 
+        investors. It is the total amount of money invested by shareholders in exchange for ownership of the company's 
+        stock.  
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Reserves + Surplus?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Reserves + Surplus refers to the portion of a company's profit that is retained and reinvested in the business 
+        rather than being distributed as dividends to shareholders. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Total Equity?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Total equity represents the net worth of a company and is also known as shareholder's equity.  
+      </p>
+      Total Equity = Share Capital + (Reserves + Surplus) + Other Equity
+      <p>Where,</p>
+      Share Capital = Total number of shares issued x face value (i.e. the minimum price at which a company's shares can be issued.)
+      <p>Reserves + Surplus = Retained or reinvested Earnings + Other Reserves</p>
+      Other Equity = Any other items classified or categorized as equity on the balance sheet.
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Current Liabilities?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Current liabilities refer to the debts of a company that are expected to be paid within 1 year. They represent 
+        the short-term financial debts of a company, which are due for payment in the immediate future. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Long Term Liabilities?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Long-term liabilities refer to the debts of a company that are not due for payment within 1 year or the current 
+        operating cycle. Examples of long-term liabilities include bonds payable, long-term loans, and deferred tax 
+        liabilities. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Other Liabilities?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Other liabilities refer to any debts that a company owes but are not categorized as current or long-term 
+        liabilities. These can include items such as deferred or postponed or delayed revenue, customer deposits, or 
+        other accumulated expenses.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Borrowings?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Borrowings refer to the money that a company borrows from external sources, such as banks or other financial 
+        institutions, to finance its operations. The borrowing can be short-term or long-term, depending on the purpose 
+        and duration of the loan.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Total Liabilities?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Total Liabilities represents the total amount of debts that a company owes to its creditors and other parties.
+      </p>
+      Total Liabilities = Current Liabilities + Long Term Liabilities + Other Liabilities + Borrowings
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Fixed Assets?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Fixed assets refer to the long-term tangible or physical assets that a company owns and uses to generate revenue, 
+        such as land, buildings, machinery, equipment, etc. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Current Assets?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Current assets refer to the assets that a company expects to convert into cash or use within a year. They 
+        typically include cash, accounts receivable, inventory, short-term investments, etc. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Other Assets?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Other Assets is a category of assets that do not fit into either the fixed or current asset categories. These may 
+        include long-term investments, deferred tax assets, intangible assets, or any other miscellaneous assets.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Investments?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        In the balance sheet, investments refer to the securities or financial assets held by a company for investment 
+        purposes. These may include stocks, bonds, mutual funds, or other financial instruments.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What are Total Assets?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Total assets is the sum of all the assets owned by a company. In the context of a company's balance sheet, 
+        it includes all the tangible or physical and intangible assets such as property, plant and equipment, 
+        investments, accounts receivables, cash, cash equivalents, etc.
+      </p>
+      Total assets = Fixed assets + Current assets + Other assets + Investments
+    </div>
+</div>
+
+
+<!-- Understand Cash Flows -->
+<h3 class="title" id="learn-cash-flows">
+    Learn Cash Flows
+ </h3>
+ <div class="faq">
+    <div class="question">
+        <h5>What is Operating Cash Flow?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Operating cash flow is a measure of the amount of cash generated by a company's operations. It represents the 
+        cash that a company generates or consumes from its core business activities in a given period of time.  
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Investing Cash Flow?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Investing cash flow refers to the cash inflows and outflows that are related to a company's investment 
+        activities, such as the purchase or sale of assets like property, plant, equipment, investments in securities, 
+        loans made to other entities, etc. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Financing Cash Flow?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Financing cash flow refers to the movement of cash in and out of a company due to activities related to 
+        financing, such as issuing or repurchasing stocks, borrowing or repaying loans, or paying dividends, etc. 
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>What is Net Cash Flow?</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Net cash flow is a measure of a company's total cash inflows and outflows over a given period of time. It 
+        represents the difference between the total cash inflows and the total cash outflows, and indicates whether a 
+        company is generating or using cash during the period. 
+      </p>
+      Net Cash Flow = Operating Cash Flow + Investing Cash Flow + Financing Cash Flow
+    </div>
+</div>
+
+
+<!-- Understand Shareholding Pattern -->
+<h3 class="title" id="learn-shareholding">
+    Learn Shareholding of Company
+ </h3>
+ <div class="faq">
+    <div class="question">
+        <h5>Promoter</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Promoter is the person who starts or begins the company. Promoter is also referred to as the founder of the 
+        company.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>Institutional Investors</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Institutional investors are entities such as banks, insurance companies, mutual funds that invest in securities 
+        on behalf of their clients or themselves. These investors typically have large amounts of capital to invest and 
+        can have a significant influence on the financial markets.
+      </p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h5>Retail Individual Investors</h5>
+
+        <svg width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+    </div>
+    <div class="answer">
+      <br>
+      <p>
+        Retail Individual Investors (RIIs) are the individual investors who invest in the stock market, basically people
+        like us. RIIs usually invest smaller amounts of money compared to institutional investors and are less 
+        experienced in the stock market. However, their investments in aggregate can make up a significant portion of 
+        the market.
+      </p>
+    </div>
+</div>
+
+ 
+ <br>
+ <br>
+
+     <!-- adding bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <!-- adding external JS -->
+     <script src="./js/stock_market_terminology.js"></script>
+
+</body>
+</html>

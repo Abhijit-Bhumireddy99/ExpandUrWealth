@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding external bootstrap5 and CSS3 links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/watchlist_mutual_funds.css">
+    <title>Discover Stocks</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i>ExpandUr</i>Wealth</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/domestic_stocks" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Discover
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/domestic_stocks">Domestic Stocks</a></li>
+                    <li><a class="dropdown-item" href="#">US Stocks</a></li>
+                    <li><a class="dropdown-item" href="/mutual_funds_explore">Mutual Funds</a></li>
+                    <li><a class="dropdown-item" href="/ipo">IPO</a></li>
+                    <li><a class="dropdown-item" href="#">Gold</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/mutual_fund_holdings">My Holdings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/watchlist_mutual_funds">Watch-List</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn&Invest
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/fundamental_analysis">Fundamental and Industry Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Technical Analysis</a></li>
+                  <li><a class="dropdown-item" href="#">Macro & Micro Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Financial & Investing Psychology</a></li>
+                  <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                  <li><a class="dropdown-item" href="/stock_market_terminology">Stock Market Terminology</a></li>
+                  <li><a class="dropdown-item" href="/mutual_fund_terminology">Mutual Fund Terminology</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Market News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Support Team</a></li>
+                  <li><a class="dropdown-item" href="#">Common Customer Queries</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><h5><%= name %></h5> Account Details ></li>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                      <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="dropdown-item">Logout</button>
+                      </form>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search about stocks here..." aria-label="Search">
+              <button class="btn btn-success" type="submit">Explore</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- heading -->
+      <h3 id="welcome">
+        <%= name %>!, save and track the performance of your favorite mutual funds without actually investing in them
+      </h3>
+
+      <br>
+
+      <h4 id="heading-1">Your Watchlist</h4>
+
+<!-- Mutual Funds Watchlist -->
+<table class = table-light id="stock-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Mutual Fund Name</th>
+        <th>Asset Class</th>
+        <th>Risk / Volatility</th>
+        <th>Curr. NAV (₹)</th>
+        <th>1 Yr Returns (%)</th>
+        <th>3 Yr Returns (%)</th>
+        <th>5 Yr Returns (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="stock-row" data-stock="KOTAK EMERGING EQUITY FUND">
+        <td>1</td>
+        <td>Kotak Emerging Equity Fund</td>
+        <td>Equity</td>
+        <td>Very High</td>
+        <td>87.62</td>
+        <td id="oneYear-return-1">+10.42</td>
+        <td id="threeYear-return-1">+36.06</td>
+        <td id="fiveYear-return-1">+15.12</td>
+      </tr>
+      <tr class="stock-row" data-stock="LATENT VIEW ANALYTICS">
+        <td>2</td>
+        <td>Motilal Oswal Long Term Equity Fund</td>
+        <td>Equity</td>
+        <td>High</td>
+        <td>31.18</td>
+        <td id="oneYear-return-2">+16.40</td>
+        <td id="threeYear-return-2">+27.01</td>
+        <td id="fiveYear-return-2">+10.61</td>
+      </tr>
+    </tbody>
+</table>
+
+<!-- One-time Investement or SIP Investment pop up -->
+<div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <a href="/mutual_fund_details" id="about-stock"><h5 class="stock-name"></h5></a>
+      <br>
+      <div class="buy-sell-options">
+        <button class="buy-button">One Time Invest</button>
+        <button class="sell-button">SIP Invest</button>
+      </div>
+    </div>
+</div>
+
+
+
+
+          <!-- adding bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    
+          <!-- adding external JS -->
+          <script src="./js/watchlist_mutual_funds.js"></script>
+    
+</body>
+</html>
